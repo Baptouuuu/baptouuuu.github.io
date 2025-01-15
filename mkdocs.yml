@@ -1,6 +1,8 @@
 site_name: Baptiste Langlade
 
 nav:
+  - Blog:
+    - blog/index.md
   - Conférences: talks.md
 
 theme:
