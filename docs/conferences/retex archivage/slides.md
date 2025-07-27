@@ -382,20 +382,6 @@ $archive = $tar($archive);
 
 ---
 
-[.code-highlight: 1-3]
-[.code-highlight: 5-6]
-
-```php
-use Innmind\Encoding\Gzip;
-
-$compress = Gzip::compress();
-
-/** @var \Innmind\Filesystem\File\Content */
-$archive = $tar($archive);
-```
-
----
-
 ```php
 $documents = fetchDocuments($orm);
 $archive = Directory::named(
@@ -406,7 +392,6 @@ $archive = Directory::named(
     ]),
 );
 $archive = $tar($archive);
-$archive = $compress($archive);
 ```
 
 ^ aucun traitement effectué pour l'instant
@@ -435,7 +420,7 @@ new StreamedResponse(
 - 100k documents
 - ~80Go
 - ~45 minutes
-- ~45Mo/s (~18Mo/s avec compression)
+- ~45Mo/s
 - ~40Mo de RAM
 
 ---
