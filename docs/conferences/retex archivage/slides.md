@@ -128,6 +128,22 @@ foreach ($trim($stream) as $name) {
 
 ---
 
+[.code-highlight: 7]
+
+```php
+/**
+ * @param callable(): \Generator<string> $stream
+ * @var \Generator<string>
+ */
+$trim = function(callable $stream): \Generator {
+    foreach ($stream() as $name) {
+        yield \rtrim($name, "\n");
+    }
+};
+```
+
+---
+
 ```php
 foreach ($hello($capitalize($trim($stream))) as $name) {
     echo $name.",\n";
