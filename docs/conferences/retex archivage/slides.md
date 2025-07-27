@@ -65,12 +65,22 @@ theme: Fira, 6
 ---
 
 ```php
-/** @var \Generator<int> */
-$stream = function(): \Generator {
-    $i = 0;
+$file = \fopen('names.txt', 'r');
 
-    while (true) {
-        yield $i++;
+while ($name = \fgets($file)) {
+    echo $name;
+}
+```
+
+---
+
+```php
+/** @var \Generator<string> */
+$stream = function(): \Generator {
+    $file = \fopen('names.txt', 'r');
+
+    while ($name = \fgets($file)) {
+        yield $name;
     }
 };
 ```
@@ -78,16 +88,16 @@ $stream = function(): \Generator {
 ---
 
 ```php
-foreach ($stream() as $i) {
-    echo $i."\n";
+foreach ($stream() as $name) {
+    echo $name;
 }
 ```
 
 ```txt
 Output :
-1
-2
-3
+alice
+bob
+jane
 etc...
 ```
 
@@ -98,12 +108,12 @@ etc...
 
 ```php
 /**
- * @param callable(): \Generator<int> $stream
- * @var \Generator<int>
+ * @param callable(): \Generator<string> $stream
+ * @var \Generator<string>
  */
-$double = function(callable $stream): \Generator {
-    foreach ($stream() as $i) {
-        yield $i * 2;
+$trim = function(callable $stream): \Generator {
+    foreach ($stream() as $name) {
+        yield \rtrim($name, "\n");
     }
 };
 ```
@@ -111,8 +121,8 @@ $double = function(callable $stream): \Generator {
 ---
 
 ```php
-foreach ($double($stream) as $i) {
-    echo $i."\n";
+foreach ($trim($stream) as $name) {
+    echo $name.",\n";
 }
 ```
 
@@ -131,12 +141,12 @@ composer require innmind/immutable
 ```php
 use Innmind\Immutable\Sequence;
 
-/** @var Sequence<int> */
+/** @var Sequence<string> */
 $stream = Sequence::lazy(function() {
-    $i = 0;
+    $file = \fopen('names.txt', 'r');
 
-    while (true) {
-        yield $i++;
+    while ($name = \fgets($file)) {
+        yield $name;
     }
 });
 ```
@@ -144,8 +154,8 @@ $stream = Sequence::lazy(function() {
 ---
 
 ```php
-$stream->foreach(function(int $i) {
-    echo $i."\n";
+$stream->foreach(function(string $name) {
+    echo $name;
 });
 ```
 
@@ -154,10 +164,10 @@ $stream->foreach(function(int $i) {
 [.code-highlight: 1-2]
 
 ```php
-/** @var Sequence<int> */
-$double = $stream->map(fn(int $i) => $i * 2);
-$double->foreach(function(int $i) {
-    echo $i."\n";
+/** @var Sequence<string> */
+$trimmed = $stream->map(fn(string $name) => \rtrim($name, "\n"));
+$trimmed->foreach(function(string $name) {
+    echo $name.",\n";
 });
 ```
 
