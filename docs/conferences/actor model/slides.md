@@ -181,6 +181,8 @@ flowchart BT
 
 ---
 
+[.list: alignment(left)]
+
 ### Actor
 
 - Traite une file de messages
