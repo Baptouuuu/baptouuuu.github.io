@@ -436,7 +436,7 @@ new StreamedResponse(
 - ~80Go
 - ~45 minutes
 - ~45Mo/s (~18Mo/s avec compression)
-- ~8Mo de RAM
+- ~40Mo de RAM
 
 ---
 
