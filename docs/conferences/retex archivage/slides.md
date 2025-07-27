@@ -368,13 +368,15 @@ composer require innmind/encoding
 ---
 
 [.code-highlight: 1-4]
-[.code-highlight: 6-7]
+[.code-highlight: 8-9]
 
 ```php
 use Innmind\Encoding\Tar;
 use Innmind\TimeContinuum\Clock;
 
 $tar = Tar::encode(Clock::live());
+
+$archive = Directory::named(...$args);
 
 /** @var \Innmind\Filesystem\File\Content */
 $archive = $tar($archive);
