@@ -128,6 +128,14 @@ foreach ($trim($stream) as $name) {
 
 ---
 
+```php
+foreach ($hello($capitalize($trim($stream))) as $name) {
+    echo $name.",\n";
+}
+```
+
+---
+
 ## Monades
 
 ---
