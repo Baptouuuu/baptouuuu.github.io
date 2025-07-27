@@ -205,6 +205,15 @@ $trimmed->foreach(function(string $name) {
 
 ---
 
+[.list: alignment(left)]
+
+## Cas d'usage
+
+- SQL
+- Filesystem
+
+---
+
 ### SQL
 
 ```php
