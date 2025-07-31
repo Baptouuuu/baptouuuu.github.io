@@ -177,7 +177,7 @@ flowchart BT
 
 ## Actor Model
 
-^ 1973 par Carl Hewitt, WhatsApp, RabbitMQ
+^ 1973 par Carl Hewitt, WhatsApp, RabbitMQ, pb concurrence => supprimer concurrence
 
 ---
 
