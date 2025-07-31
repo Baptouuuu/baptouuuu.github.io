@@ -424,9 +424,17 @@ flowchart TB
 
 ---
 
+## Avantages
+
+---
+
 ## Scalabilité ultime
 
 ^ single process -> multi process -> cluster
+
+---
+
+## Déploiement progressif
 
 ---
 
