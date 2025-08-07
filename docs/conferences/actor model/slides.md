@@ -45,6 +45,36 @@ flowchart BT
 
 ---
 
+[.code-highlight: 3-16]
+[.code-highlight: 8]
+[.code-highlight: 9]
+[.code-highlight: 10-13]
+[.code-highlight: 1-2, 17-18]
+
+```php
+$rabbitmq
+    ->with(Consume::of('queue')->handle(
+        static function(
+            $_,
+            Message $message,
+            Continuation $continuation
+        ) use ($rabbitmq) {
+            $url = decodeUrl($message);
+            $urls = crawl($url);
+            $rabbitmq
+                ->with(Publish::many($urls)->to('queue'))
+                ->run(null)
+                ->memoize();
+
+            return $continuation->ack($_);
+        },
+    ))
+    ->run(null)
+    ->memoize();
+```
+
+---
+
 ```mermaid
 flowchart TB
     subgraph queue ["Queue"]
@@ -82,6 +112,12 @@ flowchart BT
 
 ---
 
+```sh
+php consumer.php & php consumer.php &
+```
+
+---
+
 ```mermaid
 flowchart BT
     subgraph rabbitmq ["RabbitMQ"]
@@ -102,7 +138,36 @@ flowchart BT
     c2 -- Acquire --> lock
 ```
 
-^ noisy neighbour
+^ noisy neighbour: un consumer peut empêcher les autres de run
+
+---
+
+[.code-highlight: 10]
+
+```php
+$rabbitmq
+    ->with(Consume::of('queue')->handle(
+        static function(
+            $_,
+            Message $message,
+            Continuation $continuation
+        ) use ($rabbitmq) {
+            $url = decodeUrl($message);
+
+            lock($url); // appel bloquant
+
+            $urls = crawl($url);
+            $rabbitmq
+                ->with(Publish::many($urls)->to('queue'))
+                ->run(null)
+                ->memoize();
+
+            return $continuation->ack($_);
+        },
+    ))
+    ->run(null)
+    ->memoize();
+```
 
 ---
 
@@ -125,6 +190,35 @@ flowchart BT
 ```
 
 ^ aka sharding, noisy neighbour
+
+---
+
+[.code-highlight: 9-14]
+
+```php
+$rabbitmq
+    ->with(Consume::of('queue')->handle(
+        static function(
+            $_,
+            Message $message,
+            Continuation $continuation
+        ) use ($rabbitmq) {
+            $url = decodeUrl($message);
+            $urls = crawl($url);
+            $fr = $urls->filter(isDotFr(...));
+            $org = $urls->filter(isDotOrg(...));
+            $rabbitmq
+                ->with(Publish::many($fr)->to('queue1'))
+                ->with(Publish::many($org)->to('queue2'))
+                ->run(null)
+                ->memoize();
+
+            return $continuation->ack($_);
+        },
+    ))
+    ->run(null)
+    ->memoize();
+```
 
 ---
 
@@ -170,7 +264,7 @@ flowchart BT
 
 ## Problème insoluble ?
 
-^ problème valable pour des imports, webhooks, syncro de systèmes, etc...
+^ problème valable pour des imports, webhooks, syncro de systèmes, etc...; problème de logique
 
 ---
 
