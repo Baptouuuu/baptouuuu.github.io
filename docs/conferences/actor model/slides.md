@@ -118,6 +118,10 @@ php consumer.php & php consumer.php &
 
 ---
 
+## `robots.txt`
+
+---
+
 ```mermaid
 flowchart BT
     subgraph rabbitmq ["RabbitMQ"]
