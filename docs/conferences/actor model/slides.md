@@ -243,6 +243,7 @@ flowchart TB
     p1 -. Messages .-> p4
     p2 -. Messages .-> p5
     p2 -. Messages .-> p6
+    m0("First message") -..-> pr
 ```
 
 ^ actors come in systems alias diviser pour mieux régner
