@@ -107,7 +107,7 @@ flowchart BT
 
 ---
 
-## Sharding
+## Partitionnement
 
 ```mermaid
 flowchart BT
@@ -125,7 +125,7 @@ flowchart BT
     end
 ```
 
-^ noisy neighbour
+^ aka sharding, noisy neighbour
 
 ---
 
