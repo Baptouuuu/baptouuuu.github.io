@@ -55,9 +55,9 @@ flowchart TB
 
 ---
 
-## Simple mais innefficace
+## Simple mais inefficace
 
-^ simple au raisonnement mais innefficace
+^ simple au raisonnement mais inefficace
 
 ---
 
