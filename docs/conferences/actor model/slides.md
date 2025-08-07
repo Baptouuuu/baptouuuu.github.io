@@ -665,7 +665,7 @@ flowchart TB
 
 ---
 
-## Scalabilité ultime
+## Scalabilité infinie
 
 ^ single process -> multi process -> cluster
 
