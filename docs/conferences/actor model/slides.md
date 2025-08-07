@@ -33,14 +33,13 @@ flowchart TB
 ---
 
 ```mermaid
-flowchart LR
-    consumer -- Call --> fetcher
-    exchange -- Publish --> queue
-    subgraph crawl ["Crawl process"]
-        fetcher["Fetcher"] --> parser["Parser"] --> exchange["Exchange messages"]
+flowchart BT
+    subgraph rabbitmq ["RabbitMQ"]
+        queue["Queue messages"]
     end
-    subgraph consume ["Consume process"]
-        consumer["Consumer"] <-- Pull --> queue["Queue messages"]
+    c1 -- Pull --> queue
+    subgraph p1 ["Process 1"]
+        c1["Consumer 1"]
     end
 ```
 
