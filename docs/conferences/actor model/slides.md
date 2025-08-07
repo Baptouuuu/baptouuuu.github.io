@@ -308,6 +308,55 @@ flowchart TB
 
 ---
 
+[.code-highlight: 1]
+[.code-highlight: 3]
+[.code-highlight: 5-6]
+[.code-highlight: 7-15]
+
+```php
+final class Crawler implements Actor
+{
+    public function __invoke(Receive $receive): Receive
+    {
+        return $receive->on(
+            Url::class,
+            function(
+                Url $url,
+                Address $sender,
+                Continuation $continuation,
+            ) {
+                $urls = crawl($url);
+
+                return $continuation->continue($urls);
+            },
+        );
+    }
+}
+```
+
+---
+
+[.code-highlight: 1-4]
+[.code-highlight: 5-8]
+[.code-highlight: 9-12]
+
+```php
+System::of(
+    OperatingSystem::build(),
+    Adapter\InMemory::new(),
+)
+    ->actor(
+        Crawler::class,
+        static fn() => new Crawler,
+    )
+    ->run(
+        Crawler::class,
+        Url::of('https://wikipedia.org'),
+    );
+```
+
+---
+
 ```mermaid
 flowchart TB
     subgraph pr ["Process 0"]
@@ -341,6 +390,100 @@ flowchart TB
 ```
 
 ^ actors come in systems alias diviser pour mieux régner
+
+---
+
+[.code-highlight: 1-10]
+[.code-highlight: 17-23]
+
+```php
+final class Crawler implements Actor
+{
+    private Address $fr;
+    private Address $org;
+
+    public function __construct(Spawn $spawn)
+    {
+        $this->fr = $spawn(ChildCrawler::class, Tld::fr);
+        $this->org = $spawn(ChildCrawler::class, Tld::org);
+    }
+
+    public function __invoke(Receive $receive): Receive
+    {
+        return $receive->on(
+            Url::class,
+            function(Url $url, Address $sender, Continuation $continuation) {
+                if (isDotFr($url)) {
+                    ($this->fr)($url);
+                } else if (isDotOrg($url)) {
+                    ($this->org)($url);
+                }
+
+                return $continuation->continue();
+            },
+        );
+    }
+}
+```
+
+---
+
+[.code-highlight: 1-5]
+[.code-highlight: 9-10]
+[.code-highlight: 12-16]
+[.code-highlight: 11]
+[.code-highlight: 18-20]
+
+```php
+final class ChildCrawler implements Actor
+{
+    public function __construct(
+        private Tld $tld,
+    ) {}
+
+    public function __invoke(Receive $receive): Receive
+    {
+        return $receive->on(
+            Url::class,
+            function(Url $url, Address $sender, Continuation $continuation) {
+                if ($url->tld() !== $this->tld) {
+                    $sender($url);
+
+                    return $continuation->continue();
+                }
+
+                $urls = crawl($url);
+
+                return $continuation->continue($urls);
+            },
+        );
+    }
+}
+```
+
+---
+
+[.code-highlight: 7]
+[.code-highlight: 9-12]
+
+```php
+System::of(
+    OperatingSystem::build(),
+    Adapter\InMemory::new(),
+)
+    ->actor(
+        Crawler::class,
+        static fn($_, $__, Spawn $spawn) => new Crawler($spawn),
+    )
+    ->actor(
+        ChildCrawler::class,
+        static fn($_, Tld $tld) => new ChildCrawler($tld),
+    )
+    ->run(
+        Crawler::class,
+        Url::of('https://wikipedia.org'),
+    );
+```
 
 ---
 
