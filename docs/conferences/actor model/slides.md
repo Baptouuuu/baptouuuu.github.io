@@ -715,9 +715,9 @@ flowchart TB
 
 ---
 
-## 🚧 <https://github.com/innmind/witness> 🚧
+## 🚧 <https://github.com/innmind/actors> 🚧
 
-![inline](witness.png)
+![inline](actors.png)
 
 ---
 
