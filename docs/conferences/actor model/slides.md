@@ -573,7 +573,7 @@ flowchart TB
 
 ---
 
-| Actor Model | Standard Model |
+| Actor Model | RabbitMQ |
 |:-:|:-:|
 | Mailbox | Queue |
 | Actor | Consumer |
