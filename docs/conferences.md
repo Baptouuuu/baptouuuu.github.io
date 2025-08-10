@@ -6,11 +6,27 @@ hide:
 
 # Conférences
 
-## Et si on repensait les ORMs ?
+## Et si le futur de la programmation concurrentielle avait déjà 50 ans ?
 
-<iframe class="video" src="https://www.youtube.com/embed/reN01m9Gato" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+![](conferences/actor model/ad.png)
 
-[Slides](conferences/orm/slides.pdf)
+Vidéo non disponible pour le moment.
+
+[Slides](conferences/actor model/slides.pdf)
+
+## Archiver efficacement de grands volumes de données grâce aux monades
+
+![](conferences/retex archivage/ad.png)
+
+Vidéo non disponible pour le moment.
+
+[Slides](conferences/retex archivage/slides.pdf)
+
+??? info "Et si on repensait les ORMs ?"
+
+    <iframe class="video" src="https://www.youtube.com/embed/reN01m9Gato" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    [Slides](conferences/orm/slides.pdf)
 
 ??? info "Augmentez votre couverture : supprimez des tests !"
     <iframe class="video" src="https://www.youtube.com/embed/ZIM1OIjvk5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
