@@ -175,7 +175,7 @@ $rabbitmq
 
 ---
 
-## Partitionnement
+## Partitionnement / Sharding
 
 ```mermaid
 flowchart BT
