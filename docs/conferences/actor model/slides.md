@@ -64,13 +64,13 @@ $rabbitmq
             $rabbitmq
                 ->with(Publish::many($urls)->to('queue'))
                 ->run(null)
-                ->memoize();
+                ->unwrap();
 
             return $continuation->ack($_);
         },
     ))
     ->run(null)
-    ->memoize();
+    ->unwrap();
 ```
 
 ---
@@ -164,13 +164,13 @@ $rabbitmq
             $rabbitmq
                 ->with(Publish::many($urls)->to('queue'))
                 ->run(null)
-                ->memoize();
+                ->unwrap();
 
             return $continuation->ack($_);
         },
     ))
     ->run(null)
-    ->memoize();
+    ->unwrap();
 ```
 
 ---
@@ -215,13 +215,13 @@ $rabbitmq
                 ->with(Publish::many($fr)->to('queue1'))
                 ->with(Publish::many($org)->to('queue2'))
                 ->run(null)
-                ->memoize();
+                ->unwrap();
 
             return $continuation->ack($_);
         },
     ))
     ->run(null)
-    ->memoize();
+    ->unwrap();
 ```
 
 ---
