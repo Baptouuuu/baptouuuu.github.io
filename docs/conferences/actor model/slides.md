@@ -436,7 +436,7 @@ final class Crawler implements Actor
 [.code-highlight: 9-10]
 [.code-highlight: 12-16]
 [.code-highlight: 11]
-[.code-highlight: 18-20]
+[.code-highlight: 18-21]
 
 ```php
 final class ChildCrawler implements Actor
@@ -457,8 +457,9 @@ final class ChildCrawler implements Actor
                 }
 
                 $urls = crawl($url);
+                $urls->foreach(static fn($url) => $sender($url));
 
-                return $continuation->continue($urls);
+                return $continuation->continue();
             },
         );
     }
