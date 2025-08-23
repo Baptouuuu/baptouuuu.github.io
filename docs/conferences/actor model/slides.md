@@ -45,32 +45,24 @@ flowchart BT
 
 ---
 
-[.code-highlight: 3-16]
-[.code-highlight: 8]
-[.code-highlight: 9]
-[.code-highlight: 10-13]
-[.code-highlight: 1-2, 17-18]
+[.code-highlight: 3-9]
+[.code-highlight: 4]
+[.code-highlight: 5]
+[.code-highlight: 6-8]
+[.code-highlight: 1-2, 10-11]
 
 ```php
 $rabbitmq
     ->with(Consume::of('queue')->handle(
-        static function(
-            $_,
-            Message $message,
-            Continuation $continuation
-        ) use ($rabbitmq) {
+        static function(Message $message) use ($rabbitmq) {
             $url = decodeUrl($message);
             $urls = crawl($url);
             $rabbitmq
                 ->with(Publish::many($urls)->to('queue'))
-                ->run(null)
-                ->unwrap();
-
-            return $continuation->ack($_);
+                ->run();
         },
     ))
-    ->run(null)
-    ->unwrap();
+    ->run();
 ```
 
 ---
@@ -146,16 +138,12 @@ flowchart BT
 
 ---
 
-[.code-highlight: 10]
+[.code-highlight: 6]
 
 ```php
 $rabbitmq
     ->with(Consume::of('queue')->handle(
-        static function(
-            $_,
-            Message $message,
-            Continuation $continuation
-        ) use ($rabbitmq) {
+        static function(Message $message) use ($rabbitmq) {
             $url = decodeUrl($message);
 
             lock($url); // appel bloquant
@@ -163,14 +151,10 @@ $rabbitmq
             $urls = crawl($url);
             $rabbitmq
                 ->with(Publish::many($urls)->to('queue'))
-                ->run(null)
-                ->unwrap();
-
-            return $continuation->ack($_);
+                ->run();
         },
     ))
-    ->run(null)
-    ->unwrap();
+    ->run();
 ```
 
 ---
@@ -193,20 +177,14 @@ flowchart BT
     end
 ```
 
-^ aka sharding, noisy neighbour
-
 ---
 
-[.code-highlight: 9-14]
+[.code-highlight: 5-11]
 
 ```php
 $rabbitmq
     ->with(Consume::of('queue')->handle(
-        static function(
-            $_,
-            Message $message,
-            Continuation $continuation
-        ) use ($rabbitmq) {
+        static function(Message $message) use ($rabbitmq) {
             $url = decodeUrl($message);
             $urls = crawl($url);
             $fr = $urls->filter(isDotFr(...));
@@ -214,15 +192,13 @@ $rabbitmq
             $rabbitmq
                 ->with(Publish::many($fr)->to('queue1'))
                 ->with(Publish::many($org)->to('queue2'))
-                ->run(null)
-                ->unwrap();
-
-            return $continuation->ack($_);
+                ->run();
         },
     ))
-    ->run(null)
-    ->unwrap();
+    ->run();
 ```
+
+^ problème un consumer peut être plus actif qu'un autre
 
 ---
 
@@ -340,15 +316,12 @@ final class Crawler implements Actor
 
 ---
 
-[.code-highlight: 1-4]
-[.code-highlight: 5-8]
-[.code-highlight: 9-12]
+[.code-highlight: 1]
+[.code-highlight: 2-5]
+[.code-highlight: 6-9]
 
 ```php
-System::of(
-    OperatingSystem::build(),
-    Adapter\InMemory::new(),
-)
+System::of()
     ->actor(
         Crawler::class,
         static fn() => new Crawler,
@@ -468,14 +441,11 @@ final class ChildCrawler implements Actor
 
 ---
 
-[.code-highlight: 7]
-[.code-highlight: 9-12]
+[.code-highlight: 4]
+[.code-highlight: 6-9]
 
 ```php
-System::of(
-    OperatingSystem::build(),
-    Adapter\InMemory::new(),
-)
+System::of()
     ->actor(
         Crawler::class,
         static fn($_, $__, Spawn $spawn) => new Crawler($spawn),
