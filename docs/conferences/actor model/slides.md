@@ -346,13 +346,13 @@ flowchart TB
         a2m["Mailbox"] --> a2["Actor '.fr'"]
     end
     subgraph p3 ["Process 3"]
-        a3m["Mailbox"] --> a3["Actor 'wikipedia'"]
+        a3m["Mailbox"] --> a3["Actor 'wikipedia.org'"]
     end
     subgraph p4 ["Process 4"]
-        a4m["Mailbox"] --> a4["Actor 'linuxfoundation'"]
+        a4m["Mailbox"] --> a4["Actor 'linuxfoundation.org'"]
     end
     subgraph p5 ["Process 5"]
-        a5m["Mailbox"] --> a5["Actor 'wikipedia'"]
+        a5m["Mailbox"] --> a5["Actor 'wikipedia.fr'"]
     end
     subgraph p6 ["Process 6"]
         a6m["Mailbox"] --> a6["etc..."]
@@ -472,7 +472,7 @@ flowchart TB
     subgraph rabbit["RabbitMQ"]
         q1["Queue '.org'"]
         q2["Queue '.fr'"]
-        q3["Queue 'wikipedia'"]
+        q3["Queue 'wikipedia.org'"]
         q4["etc..."]
     end
     subgraph s["Server"]
@@ -528,7 +528,7 @@ flowchart TB
     subgraph rabbit["RabbitMQ"]
         q1["Queue '.org'"]
         q2["Queue '.fr'"]
-        q3["Queue 'wikipedia'"]
+        q3["Queue 'wikipedia.org'"]
         q4["etc..."]
     end
     subgraph s["Server"]
@@ -554,7 +554,7 @@ flowchart TB
     subgraph rabbit["RabbitMQ"]
         q1["Queue '.org'"]
         q2["Queue '.fr'"]
-        q3["Queue 'wikipedia'"]
+        q3["Queue 'wikipedia.org'"]
         q4["etc..."]
     end
     subgraph s2["Server 2"]
