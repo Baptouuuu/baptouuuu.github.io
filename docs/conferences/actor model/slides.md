@@ -370,19 +370,20 @@ flowchart TB
 
 ---
 
-[.code-highlight: 1-10]
-[.code-highlight: 17-23]
+[.code-highlight: 6]
+[.code-highlight: 15]
+[.code-highlight: 16-18]
+[.code-highlight: 3-4]
+[.code-highlight: 20]
 
 ```php
 final class Crawler implements Actor
 {
-    private Address $fr;
-    private Address $org;
+    /** @var array<string, Address> */
+    private array $tlds;
 
-    public function __construct(Spawn $spawn)
+    public function __construct(private Spawn $spawn)
     {
-        $this->fr = $spawn(ChildCrawler::class, Tld::fr);
-        $this->org = $spawn(ChildCrawler::class, Tld::org);
     }
 
     public function __invoke(Receive $receive): Receive
@@ -390,11 +391,12 @@ final class Crawler implements Actor
         return $receive->on(
             Url::class,
             function(Url $url, Address $sender, Continuation $continuation) {
-                if (isDotFr($url)) {
-                    ($this->fr)($url);
-                } else if (isDotOrg($url)) {
-                    ($this->org)($url);
-                }
+                $tld = $url->tld();
+                $child = $this->tlds[$tld] ??= ($this->spawn)(
+                    ChildCrawler::class,
+                );
+
+                $child($url);
 
                 return $continuation->continue();
             },
@@ -405,30 +407,19 @@ final class Crawler implements Actor
 
 ---
 
-[.code-highlight: 1-5]
-[.code-highlight: 9-10]
-[.code-highlight: 12-16]
-[.code-highlight: 11]
-[.code-highlight: 18-21]
+[.code-highlight: 1]
+[.code-highlight: 5-6]
+[.code-highlight: 8-10]
+[.code-highlight: 7]
 
 ```php
 final class ChildCrawler implements Actor
 {
-    public function __construct(
-        private Tld $tld,
-    ) {}
-
     public function __invoke(Receive $receive): Receive
     {
         return $receive->on(
             Url::class,
             function(Url $url, Address $sender, Continuation $continuation) {
-                if ($url->tld() !== $this->tld) {
-                    $sender($url);
-
-                    return $continuation->continue();
-                }
-
                 $urls = crawl($url);
                 $urls->foreach(static fn($url) => $sender($url));
 
@@ -452,7 +443,7 @@ System::of()
     )
     ->actor(
         ChildCrawler::class,
-        static fn($_, Tld $tld) => new ChildCrawler($tld),
+        static fn() => new ChildCrawler,
     )
     ->run(
         Crawler::class,
