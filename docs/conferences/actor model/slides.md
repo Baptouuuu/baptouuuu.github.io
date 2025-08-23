@@ -646,6 +646,12 @@ flowchart TB
 
 ---
 
+## Résilience
+
+^ gestion des erreurs
+
+---
+
 ## Déploiement progressif
 
 ---
