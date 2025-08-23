@@ -366,7 +366,7 @@ flowchart TB
     m0("First message") -..-> pr
 ```
 
-^ actors come in systems alias diviser pour mieux régner
+^ actors come in systems alias diviser pour mieux régner, addresses as messages
 
 ---
 
