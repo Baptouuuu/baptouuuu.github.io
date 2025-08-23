@@ -250,7 +250,7 @@ flowchart BT
 
 ## Actor Model
 
-^ 1973 par Carl Hewitt, WhatsApp, RabbitMQ, pb concurrence => supprimer concurrence
+^ 1973 par Carl Hewitt, pb concurrence => supprimer concurrence
 
 ---
 
@@ -592,7 +592,7 @@ flowchart TB
 
 ## Scalabilité infinie
 
-^ single process -> multi process -> cluster
+^ single process -> multi process -> cluster, WhatsApp, RabbitMQ
 
 ---
 
