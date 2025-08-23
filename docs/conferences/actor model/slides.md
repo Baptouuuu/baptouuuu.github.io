@@ -462,84 +462,10 @@ System::of()
 
 ---
 
-```mermaid
-flowchart TB
-    subgraph s1["Server"]
-        direction TB
-        subgraph pr ["Process 0"]
-            arm["Mailbox"] --> ar["Root actor"]
-        end
-        subgraph p1 ["Process 1"]
-            a1m["Mailbox"] --> a1["Actor '.org'"]
-        end
-        subgraph p2 ["Process 2"]
-            a2m["Mailbox"] --> a2["Actor '.fr'"]
-        end
-        subgraph p3 ["Process 3"]
-            a3m["Mailbox"] --> a3["Actor 'wikipedia'"]
-        end
-        subgraph p4 ["Process 4"]
-            a4m["Mailbox"] --> a4["Actor 'linuxfoundation'"]
-        end
-        subgraph p5 ["Process 5"]
-            a5m["Mailbox"] --> a5["Actor 'wikipedia'"]
-        end
-        subgraph p6 ["Process 6"]
-            a6m["Mailbox"] --> a6["etc..."]
-        end
-    end
-    ar -. Messages .-> p1
-    ar -. Messages .-> p2
-    p1 -. Messages .-> p3
-    p1 -. Messages .-> p4
-    p2 -. Messages .-> p5
-    p2 -. Messages .-> p6
-```
-
----
-
-```mermaid
-flowchart TB
-    subgraph s1["Server 1"]
-        direction TB
-        subgraph pr ["Process 0"]
-            arm["Mailbox"] --> ar["Root actor"]
-        end
-        subgraph p1 ["Process 1"]
-            a1m["Mailbox"] --> a1["Actor '.org'"]
-        end
-        subgraph p2 ["Process 2"]
-            a2m["Mailbox"] --> a2["Actor '.fr'"]
-        end
-    end
-    subgraph s2["Server 2"]
-        direction TB
-        subgraph p3 ["Process 3"]
-            a3m["Mailbox"] --> a3["Actor 'wikipedia'"]
-        end
-        subgraph p4 ["Process 4"]
-            a4m["Mailbox"] --> a4["Actor 'linuxfoundation'"]
-        end
-        subgraph p5 ["Process 5"]
-            a5m["Mailbox"] --> a5["Actor 'wikipedia'"]
-        end
-        subgraph p6 ["Process 6"]
-            a6m["Mailbox"] --> a6["etc..."]
-        end
-    end
-    ar -. Messages .-> p1
-    ar -. Messages .-> p2
-    p1 -. Messages .-> p3
-    p1 -. Messages .-> p4
-    p2 -. Messages .-> p5
-    p2 -. Messages .-> p6
-```
-
-^ simple et scalable, pause
-
----
 
 ## En pratique ça donne quoi ?
+
+^ simple et scalable, pause
 
 ---
 
@@ -558,15 +484,13 @@ flowchart TB
         q3["Queue 'wikipedia'"]
         q4["etc..."]
     end
-    subgraph s2["Server 2"]
+    subgraph s["Server"]
         subgraph p4["Process 4"]
             c4["Consumer"]
         end
         subgraph p3["Process 3"]
             c3["Consumer"]
         end
-    end
-    subgraph s1["Server 1"]
         subgraph p2["Process 2"]
             c2["Consumer"]
         end
@@ -605,6 +529,32 @@ flowchart TB
 ---
 
 ![inline](both.png)
+
+---
+
+```mermaid
+flowchart TB
+    subgraph rabbit["RabbitMQ"]
+        q1["Queue '.org'"]
+        q2["Queue '.fr'"]
+        q3["Queue 'wikipedia'"]
+        q4["etc..."]
+    end
+    subgraph s["Server"]
+        subgraph p2["Process 2"]
+            c3["Consumer"]
+            c4["Consumer"]
+        end
+        subgraph p1["Process 1"]
+            c1["Consumer"]
+            c2["Consumer"]
+        end
+    end
+    q1 -. Messages .-> c1
+    q2 -. Messages .-> c2
+    q3 -. Messages .-> c3
+    q4 -. Messages .-> c4
+```
 
 ---
 
