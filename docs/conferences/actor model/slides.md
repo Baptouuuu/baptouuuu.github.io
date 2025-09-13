@@ -1,5 +1,5 @@
 autoscale: true
-theme: Fira, 6
+theme: A11y
 
 ## Et si le futur de la programmation concurrentielle avait déjà 50 ans ?
 
