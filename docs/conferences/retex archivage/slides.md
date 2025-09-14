@@ -297,7 +297,11 @@ use Innmind\Immutable\Str;
 $file = File::named(
     'data.csv',
     Content::ofChunks(
-        Sequence::of("line, 1\n", "line, 2\n", "etc..."),
+        Sequence::lazy(fn() => yield from [
+            "line, 1\n",
+            "line, 2\n",
+            "etc...",
+        ]),
     ),
 );
 ```
@@ -309,11 +313,11 @@ use Innmind\Filesystem\Directory;
 
 $directory = Directory::named(
     'files',
-    Sequence::of(
+    Sequence::lazy(fn() => yield from [
         File::named('something', $content),
         Directory::named(...$args),
         // etc...
-    ),
+    ]),
 );
 ```
 
