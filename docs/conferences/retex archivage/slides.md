@@ -195,6 +195,15 @@ $trimmed->foreach(function(string $name) {
 });
 ```
 
+---
+
+| | |
+|-|-|
+| `->map()` | `->flatMap()` |
+| `->add()` | `->append()` |
+| `->filter()` | `->aggregate()` |
+| `->zip()` | etc... |
+
 ^ pause
 
 ---
