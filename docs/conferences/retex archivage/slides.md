@@ -297,8 +297,7 @@ use Innmind\Immutable\Str;
 $file = File::named(
     'data.csv',
     Content::ofChunks(
-        Sequence::of("line, 1\n", "line, 2\n", "etc...")
-            ->map(Str::of(...)),
+        Sequence::of("line, 1\n", "line, 2\n", "etc..."),
     ),
 );
 ```
@@ -334,9 +333,9 @@ $directory = Directory::named(
 
 [.code-highlight: 1]
 [.code-highlight: 2]
-[.code-highlight: 3-10]
+[.code-highlight: 3-9]
 [.code-highlight: 8]
-[.code-highlight: 1-11]
+[.code-highlight: 1-10]
 
 ```php
 $csv = File::named(
@@ -346,8 +345,7 @@ $csv = File::named(
             ->repository(Document::class)
             ->all()
             ->sequence()
-            ->map(fn(Document $document): string => $document->toCsvLine())
-            ->map(Str::of(...)),
+            ->map(fn(Document $document): string => $document->toCsvLine()),
     ),
 );
 ```
@@ -410,14 +408,13 @@ composer require innmind/encoding
 
 ---
 
-[.code-highlight: 1-4]
-[.code-highlight: 8-9]
+[.code-highlight: 1-3]
+[.code-highlight: 7-8]
 
 ```php
 use Innmind\Encoding\Tar;
-use Innmind\TimeContinuum\Clock;
 
-$tar = Tar::encode(Clock::live());
+$tar = Tar::encode();
 
 $archive = Directory::named(...$args);
 
