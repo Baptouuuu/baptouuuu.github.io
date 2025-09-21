@@ -224,6 +224,7 @@ $stream->foreach(function(string $line) {
 ---
 
 [.code-highlight: 1-2]
+[.code-highlight: 3-5]
 
 ```php
 /** @var Sequence<string> */
