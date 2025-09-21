@@ -103,6 +103,19 @@ etc...
 
 ^ important avoir une seule variable en mémoire
 
+---
+
+```mermaid
+flowchart LR
+    Generator --> foreach
+```
+
+---
+
+```mermaid
+flowchart LR
+    Generator --> Logic --> foreach
+```
 
 ---
 
