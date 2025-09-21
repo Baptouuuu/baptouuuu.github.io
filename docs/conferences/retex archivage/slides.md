@@ -454,6 +454,26 @@ $archive = Directory::named(
 
 ---
 
+## Tar
+
+---
+
+[.code-highlight: 1-3]
+[.code-highlight: 4-5]
+[.code-highlight: 6-7]
+
+```txt
+directory/file.txt
+line 1
+line 2
+directory/image.png
+binary
+directory/sub/file.ext
+content
+```
+
+---
+
 ```sh
 composer require innmind/encoding
 ```
