@@ -74,6 +74,24 @@ while ($line = \fgets($file)) {
 
 ---
 
+[.code-highlight: 1]
+[.code-highlight: 2]
+[.code-highlight: 3]
+[.code-highlight: 4]
+
+```txt
+alice
+bob
+jane
+john
+etc...
+```
+
+---
+
+[.code-highlight: 1-8]
+[.code-highlight: 6]
+
 ```php
 /** @var \Generator<string> */
 $stream = function(): \Generator {
@@ -93,11 +111,18 @@ foreach ($stream() as $line) {
 }
 ```
 
+---
+
+[.code-highlight: 1]
+[.code-highlight: 2]
+[.code-highlight: 3]
+[.code-highlight: 4]
+
 ```txt
-Output :
 alice
 bob
 jane
+john
 etc...
 ```
 
@@ -477,6 +502,29 @@ new StreamedResponse(
             \flush();
         });
 );
+```
+
+---
+
+[.code-highlight: 1]
+[.code-highlight: 2]
+[.code-highlight: 3]
+[.code-highlight: 4]
+[.code-highlight: 5]
+[.code-highlight: 6]
+[.code-highlight: 7]
+[.code-highlight: 8-9]
+
+```txt
+archive/documents.csv
+document 1, métadonnée, etc...
+document 2, métadonnée, etc...
+archive/binaires/uuid-document-1/v1.bin
+binaire chunk 1
+binaire chunk 2
+etc...
+archive/binaires/uuid-document-2/v1.bin
+binaire
 ```
 
 ---
