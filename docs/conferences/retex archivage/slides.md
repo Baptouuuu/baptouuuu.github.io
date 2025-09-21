@@ -569,7 +569,7 @@ binaire
 
 ![](doc.png)
 
-### Documentation
+## <https://innmind.org>
 
 ![inline](qr.png)
 
