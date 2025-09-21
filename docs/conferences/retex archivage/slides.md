@@ -67,8 +67,8 @@ theme: A11y
 ```php
 $file = \fopen('names.txt', 'r');
 
-while ($name = \fgets($file)) {
-    echo $name;
+while ($line = \fgets($file)) {
+    echo $line;
 }
 ```
 
@@ -79,8 +79,8 @@ while ($name = \fgets($file)) {
 $stream = function(): \Generator {
     $file = \fopen('names.txt', 'r');
 
-    while ($name = \fgets($file)) {
-        yield $name;
+    while ($line = \fgets($file)) {
+        yield $line;
     }
 };
 ```
@@ -88,8 +88,8 @@ $stream = function(): \Generator {
 ---
 
 ```php
-foreach ($stream() as $name) {
-    echo $name;
+foreach ($stream() as $line) {
+    echo $line;
 }
 ```
 
@@ -112,8 +112,8 @@ etc...
  * @var \Generator<string>
  */
 $trim = function(callable $stream): \Generator {
-    foreach ($stream() as $name) {
-        yield \rtrim($name, "\n");
+    foreach ($stream() as $line) {
+        yield \rtrim($line, "\n");
     }
 };
 ```
@@ -121,8 +121,8 @@ $trim = function(callable $stream): \Generator {
 ---
 
 ```php
-foreach ($trim($stream) as $name) {
-    echo $name.",\n";
+foreach ($trim($stream) as $line) {
+    echo $line.",\n";
 }
 ```
 
@@ -136,8 +136,8 @@ foreach ($trim($stream) as $name) {
  * @var \Generator<string>
  */
 $trim = function(callable $stream): \Generator {
-    foreach ($stream() as $name) {
-        yield \rtrim($name, "\n");
+    foreach ($stream() as $line) {
+        yield \rtrim($line, "\n");
     }
 };
 ```
@@ -145,8 +145,8 @@ $trim = function(callable $stream): \Generator {
 ---
 
 ```php
-foreach ($hello($capitalize($trim($stream))) as $name) {
-    echo $name.",\n";
+foreach ($hello($capitalize($trim($stream))) as $line) {
+    echo $line.",\n";
 }
 ```
 
@@ -169,8 +169,8 @@ use Innmind\Immutable\Sequence;
 $stream = Sequence::lazy(function() {
     $file = \fopen('names.txt', 'r');
 
-    while ($name = \fgets($file)) {
-        yield $name;
+    while ($line = \fgets($file)) {
+        yield $line;
     }
 });
 ```
@@ -178,8 +178,8 @@ $stream = Sequence::lazy(function() {
 ---
 
 ```php
-$stream->foreach(function(string $name) {
-    echo $name;
+$stream->foreach(function(string $line) {
+    echo $line;
 });
 ```
 
@@ -189,9 +189,9 @@ $stream->foreach(function(string $name) {
 
 ```php
 /** @var Sequence<string> */
-$trimmed = $stream->map(fn(string $name) => \rtrim($name, "\n"));
-$trimmed->foreach(function(string $name) {
-    echo $name.",\n";
+$trimmed = $stream->map(fn(string $line) => \rtrim($line, "\n"));
+$trimmed->foreach(function(string $line) {
+    echo $line.",\n";
 });
 ```
 
