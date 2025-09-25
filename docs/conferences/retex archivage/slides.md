@@ -147,7 +147,7 @@ flowchart LR
 ```php
 /**
  * @param callable(): \Generator<string> $stream
- * @var \Generator<string>
+ * @return \Generator<string>
  */
 $trim = function(callable $stream): \Generator {
     foreach ($stream() as $line) {
