@@ -1,5 +1,5 @@
 autoscale: true
-theme: A11y
+theme: Fira, 6
 
 ## Archiver efficacement de grands volumes de données grâce aux monades
 
