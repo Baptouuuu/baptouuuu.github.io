@@ -114,6 +114,18 @@ php consumer.php & php consumer.php &
 
 ---
 
+[.code-highlight: 1-3]
+[.code-highlight: 4]
+
+```
+User-agent : Googlebot
+Allow : /foo
+Disallow : /bar
+Crawl-delay : 10
+```
+
+---
+
 ```mermaid
 flowchart BT
     subgraph rabbitmq ["RabbitMQ"]
