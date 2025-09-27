@@ -550,6 +550,14 @@ binaire
 
 ---
 
+## Demo
+
+---
+
+![fit](demo.mp4)
+
+---
+
 [.list: alignment(left)]
 
 ## Statistiques
@@ -559,7 +567,7 @@ binaire
 - ~45 minutes
 - ~45Mo/s
 - ~40Mo de RAM
-- ~30 lignes de code
+- ~100 lignes de code
 
 ---
 
