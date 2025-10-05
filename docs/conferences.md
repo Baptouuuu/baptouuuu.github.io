@@ -17,6 +17,8 @@ Vidéo non disponible pour le moment.
 ??? example "Demo"
     <video controls><source src="actor%20model/demo.mp4" type="video/mp4"/></video>
 
+    [Code](https://github.com/Innmind/actors/pull/4)
+
 ## Archiver efficacement de grands volumes de données grâce aux monades
 
 ![](conferences/retex archivage/ad.png)
