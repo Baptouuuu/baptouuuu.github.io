@@ -514,8 +514,8 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
 new StreamedResponse(
     fn() => $archive
         ->chunks()
-        ->foreach(function(Str $chunk) {
-            echo $chunk->toString();
+        ->foreach(function(string $chunk) {
+            echo $chunk;
             \flush();
         });
 );
