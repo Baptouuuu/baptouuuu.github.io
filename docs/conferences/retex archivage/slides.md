@@ -408,8 +408,6 @@ $csv = File::named(
 [.code-highlight: 7]
 [.code-highlight: 8]
 [.code-highlight: 9]
-[.code-highlight: 10]
-[.code-highlight: 11]
 [.code-highlight: 6]
 
 ```php
@@ -421,9 +419,7 @@ use Innmind\Immutable\Predicate\Instance;
 $fetch = function(Document $document): Directory {
     return Filesystem::mount(Path::of('var/data/'))
         ->get(Name::of($document->id()->toString()))
-        ->keep(Instance::of(Directory::class))
-        ->attempt(fn() => new \Exception('Données perdues'))
-        ->unwrap();
+        ->keep(Instance::of(Directory::class));
 };
 ```
 
