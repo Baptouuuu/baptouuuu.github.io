@@ -1,0 +1,4807 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "6b55d19651cc3d023732628a978fe6c3",
+    "packages": [
+        {
+            "name": "brick/math",
+            "version": "0.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brick/math.git",
+                "reference": "113a8ee2656b882d4c3164fa31aa6e12cbb7aaa2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brick/math/zipball/113a8ee2656b882d4c3164fa31aa6e12cbb7aaa2",
+                "reference": "113a8ee2656b882d4c3164fa31aa6e12cbb7aaa2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpstan/phpstan": "2.1.22",
+                "phpunit/phpunit": "^11.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Brick\\Math\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Arbitrary-precision arithmetic library",
+            "keywords": [
+                "Arbitrary-precision",
+                "BigInteger",
+                "BigRational",
+                "arithmetic",
+                "bigdecimal",
+                "bignum",
+                "bignumber",
+                "brick",
+                "decimal",
+                "integer",
+                "math",
+                "mathematics",
+                "rational"
+            ],
+            "support": {
+                "issues": "https://github.com/brick/math/issues",
+                "source": "https://github.com/brick/math/tree/0.14.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/BenMorel",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-08-29T12:40:03+00:00"
+        },
+        {
+            "name": "formal/access-layer",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/formal-php/access-layer.git",
+                "reference": "cda3005cf173e24842f88e580e9ced06036c2ed9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/formal-php/access-layer/zipball/cda3005cf173e24842f88e580e9ced06036c2ed9",
+                "reference": "cda3005cf173e24842f88e580e9ced06036c2ed9",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/immutable": "~4.0|~5.0",
+                "innmind/specification": "~4.1",
+                "innmind/url": "~4.0",
+                "php": "~8.2",
+                "psr/log": "~3.0"
+            },
+            "conflict": {
+                "innmind/black-box": "<5.0|~7.0"
+            },
+            "provide": {
+                "innmind/black-box-sets": "5.0"
+            },
+            "require-dev": {
+                "innmind/black-box": "^5.8|^6.0.2",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "suggest": {
+                "innmind/black-box": "For property based testing"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Formal\\AccessLayer\\": "src/",
+                    "Fixtures\\Formal\\AccessLayer\\": "fixtures/",
+                    "Properties\\Formal\\AccessLayer\\": "properties/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "homepage": "http://github.com/formal-php/access-layer",
+            "support": {
+                "issues": "http://github.com/formal-php/access-layer/issues",
+                "source": "https://github.com/formal-php/access-layer/tree/4.2.0"
+            },
+            "time": "2025-04-09T14:57:59+00:00"
+        },
+        {
+            "name": "formal/orm",
+            "version": "5.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/formal-php/orm.git",
+                "reference": "cf8f73dfff4dba9daf5a88f42754bec732e33408"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/formal-php/orm/zipball/cf8f73dfff4dba9daf5a88f42754bec732e33408",
+                "reference": "cf8f73dfff4dba9daf5a88f42754bec732e33408",
+                "shasum": ""
+            },
+            "require": {
+                "formal/access-layer": "~4.2",
+                "innmind/foundation": "~1.1",
+                "innmind/type": "~1.2",
+                "innmind/url-template": "~3.1",
+                "php": "~8.2",
+                "ramsey/uuid": "~4.7"
+            },
+            "require-dev": {
+                "innmind/black-box": "~6.1",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Formal\\ORM\\": "src/",
+                    "Fixtures\\Formal\\ORM\\": "fixtures/",
+                    "Properties\\Formal\\ORM\\": "properties/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "homepage": "http://github.com/formal/orm",
+            "support": {
+                "issues": "http://github.com/formal-php/orm/issues",
+                "source": "https://github.com/formal-php/orm/tree/5.1.1"
+            },
+            "time": "2025-09-24T14:40:45+00:00"
+        },
+        {
+            "name": "innmind/async",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/async.git",
+                "reference": "0eb4b98ce79608c3f12b74dd0477717b1697764d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/async/zipball/0eb4b98ce79608c3f12b74dd0477717b1697764d",
+                "reference": "0eb4b98ce79608c3f12b74dd0477717b1697764d",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/immutable": "~5.18",
+                "innmind/io": "^3.5.1",
+                "innmind/operating-system": "~6.2",
+                "innmind/signals": "^4.1.1",
+                "innmind/time-warp": "^4.1.1",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/black-box": "~6.5",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Async\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Async orchestration",
+            "homepage": "http://github.com/innmind/async",
+            "keywords": [
+                "async"
+            ],
+            "support": {
+                "issues": "http://github.com/innmind/async/issues",
+                "source": "https://github.com/Innmind/async/tree/1.0.0"
+            },
+            "time": "2025-08-23T16:08:06+00:00"
+        },
+        {
+            "name": "innmind/black-box",
+            "version": "6.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/BlackBox.git",
+                "reference": "388cee0883ca6f533f2afd0cd077244b1265a414"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/BlackBox/zipball/388cee0883ca6f533f2afd0cd077244b1265a414",
+                "reference": "388cee0883ca6f533f2afd0cd077244b1265a414",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/json": "^1.1",
+                "php": "~8.2",
+                "phpunit/php-code-coverage": "~10.1|~11.0|~12.0",
+                "phpunit/php-timer": "~6.0|~7.0|~8.0",
+                "phpunit/phpunit": "~10.0|~11.0|~12.0",
+                "symfony/var-dumper": "~6.0|~7.0"
+            },
+            "require-dev": {
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1",
+                "ramsey/uuid": "^4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Runner/functions.php"
+                ],
+                "psr-4": {
+                    "Innmind\\BlackBox\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Test library",
+            "homepage": "http://github.com/Innmind/BlackBox",
+            "keywords": [
+                "fixtures",
+                "property based testing",
+                "test"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/BlackBox/issues",
+                "source": "https://github.com/Innmind/BlackBox/tree/6.5.0"
+            },
+            "time": "2025-08-04T14:39:15+00:00"
+        },
+        {
+            "name": "innmind/cli",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/CLI.git",
+                "reference": "ade3e2819606f9af5b819895c5cfffc2c5cdc7cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/CLI/zipball/ade3e2819606f9af5b819895c5cfffc2c5cdc7cc",
+                "reference": "ade3e2819606f9af5b819895c5cfffc2c5cdc7cc",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/immutable": "~5.16",
+                "innmind/io": "~3.2",
+                "innmind/operating-system": "~6.0",
+                "innmind/stack-trace": "~4.0",
+                "innmind/url": "~4.0",
+                "innmind/validation": "~2.0",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/black-box": "^6.4.1",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\CLI\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Library to build CLI tools",
+            "homepage": "http://github.com/Innmind/CLI",
+            "keywords": [
+                "cli"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/CLI/issues",
+                "source": "https://github.com/Innmind/CLI/tree/4.0.0"
+            },
+            "time": "2025-07-13T14:30:27+00:00"
+        },
+        {
+            "name": "innmind/colour",
+            "version": "4.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/Colour.git",
+                "reference": "63c027c8a0b3e244c11db241bfe91b58a12245d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/Colour/zipball/63c027c8a0b3e244c11db241bfe91b58a12245d1",
+                "reference": "63c027c8a0b3e244c11db241bfe91b58a12245d1",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/immutable": "~4.0|~5.0",
+                "php": "~8.2"
+            },
+            "conflict": {
+                "innmind/black-box": "<5.0|~7.0"
+            },
+            "provide": {
+                "innmind/black-box-sets": "5.0"
+            },
+            "require-dev": {
+                "innmind/black-box": "~5.0|^6.0.1",
+                "innmind/coding-standard": "~2.0",
+                "phpunit/phpunit": "~10.2|~11.0|~12.0",
+                "vimeo/psalm": "~5.0"
+            },
+            "suggest": {
+                "innmind/black-box": "For property based testing"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Colour\\": "src/",
+                    "Fixtures\\Innmind\\Colour\\": "fixtures/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Handle colours strictly",
+            "homepage": "http://github.com/Innmind/Colour",
+            "keywords": [
+                "colour"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/Colour/issues",
+                "source": "https://github.com/Innmind/Colour/tree/4.3.0"
+            },
+            "time": "2025-03-20T14:37:42+00:00"
+        },
+        {
+            "name": "innmind/encoding",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/encoding.git",
+                "reference": "56266b72cbf3c7cb591e9b967176b110f8de793c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/encoding/zipball/56266b72cbf3c7cb591e9b967176b110f8de793c",
+                "reference": "56266b72cbf3c7cb591e9b967176b110f8de793c",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/filesystem": "~8.0",
+                "innmind/immutable": "~5.7",
+                "innmind/time-continuum": "~4.1",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/black-box": "~6.1",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Encoding\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "homepage": "http://github.com/innmind/encoding",
+            "keywords": [
+                "deflate",
+                "encoding",
+                "gzip"
+            ],
+            "support": {
+                "issues": "http://github.com/innmind/encoding/issues",
+                "source": "https://github.com/Innmind/encoding/tree/2.0.0"
+            },
+            "time": "2025-04-16T18:01:23+00:00"
+        },
+        {
+            "name": "innmind/file-watch",
+            "version": "5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/FileWatch.git",
+                "reference": "abbd0007123bba9ab4654a521b84b7c6abc9162c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/FileWatch/zipball/abbd0007123bba9ab4654a521b84b7c6abc9162c",
+                "reference": "abbd0007123bba9ab4654a521b84b7c6abc9162c",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/server-control": "~6.0",
+                "innmind/time-continuum": "^4.1.1",
+                "innmind/time-warp": "~4.0",
+                "innmind/url": "~4.0",
+                "php": "~8.2",
+                "psr/log": "~3.0"
+            },
+            "require-dev": {
+                "innmind/black-box": "~6.1",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\FileWatch\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Library to execute code when a file changes",
+            "homepage": "http://github.com/Innmind/FileWatch",
+            "keywords": [
+                "file",
+                "watch"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/FileWatch/issues",
+                "source": "https://github.com/Innmind/FileWatch/tree/5.0.0"
+            },
+            "time": "2025-05-08T16:16:17+00:00"
+        },
+        {
+            "name": "innmind/filesystem",
+            "version": "8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/Filesystem.git",
+                "reference": "33711d711fab4ee97185ff0221f51a049eae25b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/Filesystem/zipball/33711d711fab4ee97185ff0221f51a049eae25b6",
+                "reference": "33711d711fab4ee97185ff0221f51a049eae25b6",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/immutable": "~4.15|~5.0",
+                "innmind/io": "^3.0.1",
+                "innmind/media-type": "~2.1",
+                "innmind/url": "~4.2",
+                "innmind/validation": "~2.0",
+                "php": "~8.2",
+                "psr/log": "~3.0",
+                "symfony/filesystem": "~6.0|~7.0"
+            },
+            "conflict": {
+                "innmind/black-box": "<6.0|~7.0"
+            },
+            "provide": {
+                "innmind/black-box-sets": "6.0"
+            },
+            "require-dev": {
+                "innmind/black-box": "^6.0.2",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1",
+                "ramsey/uuid": "^4.6"
+            },
+            "suggest": {
+                "innmind/black-box": "For property based testing"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Filesystem\\": "src/",
+                    "Fixtures\\Innmind\\Filesystem\\": "fixtures/",
+                    "Properties\\Innmind\\Filesystem\\": "properties/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Filesystem abstraction layer",
+            "homepage": "http://github.com/Innmind/filesystem",
+            "keywords": [
+                "filesystem"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/filesystem/issues",
+                "source": "https://github.com/Innmind/Filesystem/tree/8.1.0"
+            },
+            "time": "2025-05-09T13:05:09+00:00"
+        },
+        {
+            "name": "innmind/foundation",
+            "version": "1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/foundation.git",
+                "reference": "373a2a6645f6b2b49935fb696d81f0b9e28a4a01"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/foundation/zipball/373a2a6645f6b2b49935fb696d81f0b9e28a4a01",
+                "reference": "373a2a6645f6b2b49935fb696d81f0b9e28a4a01",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/async": "~1.0",
+                "innmind/cli": "~4.0",
+                "innmind/encoding": "~2.0",
+                "innmind/file-watch": "~5.0",
+                "innmind/filesystem": "~8.1",
+                "innmind/hash": "~1.7",
+                "innmind/html": "~7.0",
+                "innmind/http": "~8.0",
+                "innmind/http-server": "~5.0",
+                "innmind/http-transport": "~8.1",
+                "innmind/immutable": "~5.20",
+                "innmind/io": "^3.5.1",
+                "innmind/ip": "~3.2",
+                "innmind/json": "~1.4",
+                "innmind/math": "~6.1",
+                "innmind/media-type": "~2.3",
+                "innmind/operating-system": "~6.2",
+                "innmind/reflection": "~5.2",
+                "innmind/router": "~5.2",
+                "innmind/server-control": "~6.1",
+                "innmind/server-status": "~5.0",
+                "innmind/specification": "~4.1",
+                "innmind/time-continuum": "~4.2",
+                "innmind/time-warp": "^4.1.1",
+                "innmind/url": "~4.4",
+                "innmind/validation": "~2.3",
+                "innmind/xml": "~8.0",
+                "php": "~8.2"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Foundation packages for the Innmind ecosystem",
+            "homepage": "http://github.com/innmind/foundation",
+            "support": {
+                "issues": "http://github.com/innmind/foundation/issues",
+                "source": "https://github.com/Innmind/foundation/tree/1.10.0"
+            },
+            "time": "2025-09-21T08:23:44+00:00"
+        },
+        {
+            "name": "innmind/graphviz",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/Graphviz.git",
+                "reference": "1feda07b737ae38a6a9d71f73965cde9380fa329"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/Graphviz/zipball/1feda07b737ae38a6a9d71f73965cde9380fa329",
+                "reference": "1feda07b737ae38a6a9d71f73965cde9380fa329",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/colour": "~4.0",
+                "innmind/filesystem": "~7.0|~8.0",
+                "innmind/immutable": "~5.0",
+                "innmind/url": "~4.0",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/black-box": "~6.1",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Graphviz\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Graphviz abstraction",
+            "homepage": "http://github.com/Innmind/Graphviz",
+            "support": {
+                "issues": "http://github.com/Innmind/Graphviz/issues",
+                "source": "https://github.com/Innmind/Graphviz/tree/4.0.0"
+            },
+            "time": "2025-04-18T16:17:57+00:00"
+        },
+        {
+            "name": "innmind/hash",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/hash.git",
+                "reference": "9c70068276cc3a3486b16581db09ff8a80981269"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/hash/zipball/9c70068276cc3a3486b16581db09ff8a80981269",
+                "reference": "9c70068276cc3a3486b16581db09ff8a80981269",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/filesystem": "~7.0|~8.0",
+                "innmind/immutable": "~4.5|~5.0",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/black-box": "~6.1",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Hash\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Files incremental hash",
+            "homepage": "http://github.com/innmind/hash",
+            "keywords": [
+                "file",
+                "hash"
+            ],
+            "support": {
+                "issues": "http://github.com/innmind/hash/issues",
+                "source": "https://github.com/Innmind/hash/tree/1.7.0"
+            },
+            "time": "2025-04-14T17:44:53+00:00"
+        },
+        {
+            "name": "innmind/html",
+            "version": "7.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/Html.git",
+                "reference": "cc5a13e9a5e08284df04d798c15ad2d3c39a8418"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/Html/zipball/cc5a13e9a5e08284df04d798c15ad2d3c39a8418",
+                "reference": "cc5a13e9a5e08284df04d798c15ad2d3c39a8418",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/filesystem": "~8.1",
+                "innmind/immutable": "~5.16",
+                "innmind/url": "~4.0",
+                "innmind/validation": "~2.0",
+                "innmind/xml": "~8.0",
+                "php": "~8.2",
+                "symfony/dom-crawler": ">=6.3 <7.0.7"
+            },
+            "require-dev": {
+                "innmind/black-box": "^6.4.1",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Html\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Library to abstract html manipulation",
+            "homepage": "http://github.com/Innmind/Html",
+            "keywords": [
+                "html"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/Html/issues",
+                "source": "https://github.com/Innmind/Html/tree/7.0.0"
+            },
+            "time": "2025-06-07T09:59:49+00:00"
+        },
+        {
+            "name": "innmind/http",
+            "version": "8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/Http.git",
+                "reference": "17bf10b2911aa48cd63c0f1f2901ca0323fdb2cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/Http/zipball/17bf10b2911aa48cd63c0f1f2901ca0323fdb2cc",
+                "reference": "17bf10b2911aa48cd63c0f1f2901ca0323fdb2cc",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/filesystem": "~8.0",
+                "innmind/immutable": "~5.11",
+                "innmind/io": "^3.0.1",
+                "innmind/media-type": "^2.0.1",
+                "innmind/time-continuum": "~4.1",
+                "innmind/url": "~4.0",
+                "innmind/validation": "~2.0",
+                "php": "~8.2",
+                "ramsey/uuid": "~4.7"
+            },
+            "require-dev": {
+                "innmind/black-box": "~6.1",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1",
+                "symfony/process": "^6.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Http\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Value Objects to abstract http messages",
+            "homepage": "http://github.com/Innmind/Http",
+            "keywords": [
+                "Value Object",
+                "http"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/Http/issues",
+                "source": "https://github.com/Innmind/Http/tree/8.0.0"
+            },
+            "time": "2025-04-20T15:28:12+00:00"
+        },
+        {
+            "name": "innmind/http-server",
+            "version": "5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/HttpServer.git",
+                "reference": "5f085958dadc68d5915ac1a08abb57059a148a8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/HttpServer/zipball/5f085958dadc68d5915ac1a08abb57059a148a8f",
+                "reference": "5f085958dadc68d5915ac1a08abb57059a148a8f",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/http": "~8.0",
+                "innmind/operating-system": "~6.0",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\HttpServer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Http server",
+            "homepage": "http://github.com/Innmind/HttpServer",
+            "keywords": [
+                "http",
+                "server"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/HttpServer/issues",
+                "source": "https://github.com/Innmind/HttpServer/tree/5.0.0"
+            },
+            "time": "2025-07-13T15:06:33+00:00"
+        },
+        {
+            "name": "innmind/http-transport",
+            "version": "8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/HttpTransport.git",
+                "reference": "ca33079a1091a9fb4fea9936f9cd747ad9912c27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/HttpTransport/zipball/ca33079a1091a9fb4fea9936f9cd747ad9912c27",
+                "reference": "ca33079a1091a9fb4fea9936f9cd747ad9912c27",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "innmind/filesystem": "~8.1",
+                "innmind/http": "~8.0",
+                "innmind/immutable": "~5.14",
+                "innmind/io": "~3.2",
+                "innmind/time-continuum": "^4.1.1",
+                "innmind/time-warp": "~4.0",
+                "innmind/url": "~4.0",
+                "php": "~8.2",
+                "psr/log": "~3.0",
+                "ramsey/uuid": "^4.7"
+            },
+            "require-dev": {
+                "innmind/black-box": "~6.2",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\HttpTransport\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Library to fulfill http resquest",
+            "homepage": "http://github.com/Innmind/HttpTransport",
+            "keywords": [
+                "client",
+                "http"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/HttpTransport/issues",
+                "source": "https://github.com/Innmind/HttpTransport/tree/8.1.0"
+            },
+            "time": "2025-09-18T13:28:26+00:00"
+        },
+        {
+            "name": "innmind/immutable",
+            "version": "5.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/Immutable.git",
+                "reference": "4347266f6c7c5f2c19da6de49aec970b5d6e53b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/Immutable/zipball/4347266f6c7c5f2c19da6de49aec970b5d6e53b7",
+                "reference": "4347266f6c7c5f2c19da6de49aec970b5d6e53b7",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.2"
+            },
+            "conflict": {
+                "innmind/black-box": "<6.0|~7.0"
+            },
+            "provide": {
+                "innmind/black-box-sets": "6.0"
+            },
+            "require-dev": {
+                "innmind/black-box": "^6.4.1",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "suggest": {
+                "innmind/black-box": "For property based testing"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Immutable\\": "src/",
+                    "Fixtures\\Innmind\\Immutable\\": "fixtures/",
+                    "Properties\\Innmind\\Immutable\\": "properties/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Immutable PHP primitive wrappers",
+            "homepage": "http://github.com/Innmind/Immutable",
+            "keywords": [
+                "immutable",
+                "wrapper"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/Immutable/issues",
+                "source": "https://github.com/Innmind/Immutable/tree/5.20.0"
+            },
+            "time": "2025-09-06T09:59:37+00:00"
+        },
+        {
+            "name": "innmind/io",
+            "version": "3.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/io.git",
+                "reference": "277d658527021ea815167336a667c4d9092fb900"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/io/zipball/277d658527021ea815167336a667c4d9092fb900",
+                "reference": "277d658527021ea815167336a667c4d9092fb900",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/immutable": "~5.13",
+                "innmind/ip": "~3.2",
+                "innmind/time-continuum": "^4.0.2",
+                "innmind/url": "~4.3",
+                "innmind/validation": "~2.0",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/black-box": "~6.1",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\IO\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "High level abstraction for streams and sockets",
+            "homepage": "http://github.com/innmind/io",
+            "keywords": [
+                "Socket",
+                "stream"
+            ],
+            "support": {
+                "issues": "http://github.com/innmind/io/issues",
+                "source": "https://github.com/Innmind/io/tree/3.5.1"
+            },
+            "time": "2025-08-18T16:36:12+00:00"
+        },
+        {
+            "name": "innmind/ip",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/IP.git",
+                "reference": "5b5e16ba5e0ed7e16e21db81c252533dfa26d833"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/IP/zipball/5b5e16ba5e0ed7e16e21db81c252533dfa26d833",
+                "reference": "5b5e16ba5e0ed7e16e21db81c252533dfa26d833",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/immutable": "~4.1|~5.0",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/coding-standard": "~2.0",
+                "phpunit/phpunit": "~9.0",
+                "vimeo/psalm": "~5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\IP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "langlade.baptiste@gmail.com"
+                }
+            ],
+            "description": "IP addresses model",
+            "homepage": "http://github.com/Innmind/IP",
+            "keywords": [
+                "IP",
+                "address"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/IP/issues",
+                "source": "https://github.com/Innmind/IP/tree/3.2.0"
+            },
+            "time": "2023-09-16T16:24:44+00:00"
+        },
+        {
+            "name": "innmind/json",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/Json.git",
+                "reference": "ba937f8f43fe8df0174b946508652296b116462e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/Json/zipball/ba937f8f43fe8df0174b946508652296b116462e",
+                "reference": "ba937f8f43fe8df0174b946508652296b116462e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "innmind/immutable": "~5.3",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/coding-standard": "~2.0",
+                "phpunit/phpunit": "~10.0",
+                "vimeo/psalm": "~5.23"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Json\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Type safe json encoder/decoder",
+            "homepage": "http://github.com/Innmind/Json",
+            "keywords": [
+                "json"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/Json/issues",
+                "source": "https://github.com/Innmind/Json/tree/1.4.0"
+            },
+            "time": "2024-03-23T14:35:53+00:00"
+        },
+        {
+            "name": "innmind/math",
+            "version": "6.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/Math.git",
+                "reference": "61fe5389eb8e9eb88fa4e690da1757d239b860f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/Math/zipball/61fe5389eb8e9eb88fa4e690da1757d239b860f7",
+                "reference": "61fe5389eb8e9eb88fa4e690da1757d239b860f7",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/immutable": "~4.15|~5.0",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/coding-standard": "~2.0",
+                "phpunit/phpunit": "~9.0",
+                "vimeo/psalm": "~5.15"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Innmind\\Math\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Library holding a set of math functions",
+            "homepage": "http://github.com/Innmind/Math",
+            "keywords": [
+                "math"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/Math/issues",
+                "source": "https://github.com/Innmind/Math/tree/6.1.0"
+            },
+            "time": "2023-09-23T10:18:28+00:00"
+        },
+        {
+            "name": "innmind/media-type",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/MediaType.git",
+                "reference": "0d8384358cb01f819334c92d0e48cb6b3167f138"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/MediaType/zipball/0d8384358cb01f819334c92d0e48cb6b3167f138",
+                "reference": "0d8384358cb01f819334c92d0e48cb6b3167f138",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/immutable": "~4.15|~5.0",
+                "php": "~8.2"
+            },
+            "conflict": {
+                "innmind/black-box": "<5.0|~7.0"
+            },
+            "provide": {
+                "innmind/black-box-sets": "5.0"
+            },
+            "require-dev": {
+                "innmind/black-box": "~5.0|^6.0.1",
+                "innmind/coding-standard": "~2.0",
+                "phpunit/phpunit": "~10.2|~11.0|~12.0",
+                "vimeo/psalm": "~5.6"
+            },
+            "suggest": {
+                "innmind/black-box": "For property based testing"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\MediaType\\": "src/",
+                    "Fixtures\\Innmind\\MediaType\\": "fixtures/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Model of media types",
+            "homepage": "http://github.com/Innmind/MediaType",
+            "keywords": [
+                "media type"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/MediaType/issues",
+                "source": "https://github.com/Innmind/MediaType/tree/2.3.0"
+            },
+            "time": "2025-03-20T14:49:12+00:00"
+        },
+        {
+            "name": "innmind/operating-system",
+            "version": "6.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/OperatingSystem.git",
+                "reference": "1c36d9ac0871fa779e939131cac8ba404b0ae181"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/OperatingSystem/zipball/1c36d9ac0871fa779e939131cac8ba404b0ae181",
+                "reference": "1c36d9ac0871fa779e939131cac8ba404b0ae181",
+                "shasum": ""
+            },
+            "require": {
+                "formal/access-layer": "~4.0",
+                "innmind/file-watch": "~5.0",
+                "innmind/filesystem": "~8.1",
+                "innmind/http-transport": "~8.0",
+                "innmind/immutable": "~5.15",
+                "innmind/io": "~3.2",
+                "innmind/server-control": "~6.0",
+                "innmind/server-status": "~5.0",
+                "innmind/signals": "~4.0",
+                "innmind/time-continuum": "^4.1.1",
+                "innmind/time-warp": "~4.0",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/black-box": "~6.2",
+                "innmind/coding-standard": "~2.0",
+                "innmind/ip": "~3.0",
+                "innmind/static-analysis": "^1.2.1",
+                "innmind/url": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\OperatingSystem\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Abstraction for the whole system the script is operating in",
+            "homepage": "http://github.com/Innmind/OperatingSystem",
+            "keywords": [
+                "abstraction",
+                "operating system"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/OperatingSystem/issues",
+                "source": "https://github.com/Innmind/OperatingSystem/tree/6.2.0"
+            },
+            "time": "2025-08-20T11:49:23+00:00"
+        },
+        {
+            "name": "innmind/reflection",
+            "version": "5.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/Reflection.git",
+                "reference": "ca267cf60b06aa2eb26f09ff7b1026e6fac57bd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/Reflection/zipball/ca267cf60b06aa2eb26f09ff7b1026e6fac57bd0",
+                "reference": "ca267cf60b06aa2eb26f09ff7b1026e6fac57bd0",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/immutable": "~4.0|~5.0",
+                "innmind/type": "~1.0",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/black-box": "~5.1",
+                "innmind/coding-standard": "~2.0",
+                "phpunit/phpunit": "~10.2",
+                "vimeo/psalm": "~5.13"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Reflection\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Library to build objects and extract data out of them",
+            "homepage": "http://github.com/Innmind/Reflection",
+            "keywords": [
+                "reflection"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/Reflection/issues",
+                "source": "https://github.com/Innmind/Reflection/tree/5.2.0"
+            },
+            "time": "2023-09-16T16:38:32+00:00"
+        },
+        {
+            "name": "innmind/router",
+            "version": "5.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/Router.git",
+                "reference": "f6983c3d20306bb00f29b4ce22b341af1e414440"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/Router/zipball/f6983c3d20306bb00f29b4ce22b341af1e414440",
+                "reference": "f6983c3d20306bb00f29b4ce22b341af1e414440",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/http": "~8.0",
+                "innmind/immutable": "~5.20",
+                "innmind/url": "~4.1",
+                "innmind/url-template": "~3.0",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/black-box": "~6.5",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Router\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "HTTP router",
+            "homepage": "http://github.com/Innmind/Router",
+            "keywords": [
+                "http",
+                "router"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/Router/issues",
+                "source": "https://github.com/Innmind/Router/tree/5.2.0"
+            },
+            "time": "2025-09-06T14:27:17+00:00"
+        },
+        {
+            "name": "innmind/server-control",
+            "version": "6.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/ServerControl.git",
+                "reference": "8b772ca535dcc7126369d8b1686cfa8b9058304a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/ServerControl/zipball/8b772ca535dcc7126369d8b1686cfa8b9058304a",
+                "reference": "8b772ca535dcc7126369d8b1686cfa8b9058304a",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/filesystem": "~8.0",
+                "innmind/immutable": "~5.12",
+                "innmind/io": "~3.1",
+                "innmind/time-continuum": "^4.1.1",
+                "innmind/time-warp": "~4.0",
+                "innmind/url": "~4.0",
+                "php": "~8.2",
+                "psr/log": "~3.0"
+            },
+            "require-dev": {
+                "innmind/black-box": "~6.5",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Server\\Control\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Allows to control the server from php",
+            "homepage": "http://github.com/Innmind/ServerControl",
+            "support": {
+                "issues": "http://github.com/Innmind/ServerControl/issues",
+                "source": "https://github.com/Innmind/ServerControl/tree/6.1.0"
+            },
+            "time": "2025-08-06T13:51:52+00:00"
+        },
+        {
+            "name": "innmind/server-status",
+            "version": "5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/ServerStatus.git",
+                "reference": "c8ce8e2e8bc540f26ed8a57bdb34e00cd3fc0ab5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/ServerStatus/zipball/c8ce8e2e8bc540f26ed8a57bdb34e00cd3fc0ab5",
+                "reference": "c8ce8e2e8bc540f26ed8a57bdb34e00cd3fc0ab5",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/immutable": "~5.14",
+                "innmind/server-control": "~6.0",
+                "innmind/time-continuum": "^4.1.1",
+                "innmind/url": "~4.0",
+                "innmind/validation": "^2.0",
+                "php": "~8.2",
+                "psr/log": "~3.0"
+            },
+            "require-dev": {
+                "innmind/black-box": "~6.1",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "~1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Server\\Status\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Library to access various components of the operating system",
+            "homepage": "http://github.com/Innmind/ServerStatus",
+            "support": {
+                "issues": "http://github.com/Innmind/ServerStatus/issues",
+                "source": "https://github.com/Innmind/ServerStatus/tree/5.0.0"
+            },
+            "time": "2025-05-08T13:18:01+00:00"
+        },
+        {
+            "name": "innmind/signals",
+            "version": "4.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/Signals.git",
+                "reference": "8fb3888248b2edc0032413286d4962c6e65cc4de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/Signals/zipball/8fb3888248b2edc0032413286d4962c6e65cc4de",
+                "reference": "8fb3888248b2edc0032413286d4962c6e65cc4de",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/immutable": "~5.18",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/black-box": "~6.5",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Signals\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Manage multiple callbacks per signal",
+            "homepage": "http://github.com/Innmind/Signals",
+            "keywords": [
+                "cli",
+                "handler",
+                "signal"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/Signals/issues",
+                "source": "https://github.com/Innmind/Signals/tree/4.1.1"
+            },
+            "time": "2025-08-20T12:30:17+00:00"
+        },
+        {
+            "name": "innmind/specification",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/Specification.git",
+                "reference": "e0d929677e20a02ef8c02d7c4506f890e936acc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/Specification/zipball/e0d929677e20a02ef8c02d7c4506f890e936acc4",
+                "reference": "e0d929677e20a02ef8c02d7c4506f890e936acc4",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.1"
+            },
+            "require-dev": {
+                "innmind/coding-standard": "~2.0",
+                "vimeo/psalm": "~4.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Specification\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Interfaces allowing to compose a tree of specifications",
+            "homepage": "http://github.com/Innmind/Specification",
+            "keywords": [
+                "ddd",
+                "specification"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/Specification/issues",
+                "source": "https://github.com/Innmind/Specification/tree/4.1.0"
+            },
+            "time": "2024-07-13T14:45:26+00:00"
+        },
+        {
+            "name": "innmind/stack-trace",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/StackTrace.git",
+                "reference": "b13a67219aeeaf6297e780a88700f5fd1d17356e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/StackTrace/zipball/b13a67219aeeaf6297e780a88700f5fd1d17356e",
+                "reference": "b13a67219aeeaf6297e780a88700f5fd1d17356e",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/graphviz": "~4.0",
+                "innmind/immutable": "~5.16",
+                "innmind/url": "~4.4",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/black-box": "^6.4.1",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "~1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\StackTrace\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Tool to inspect exception stack trace",
+            "homepage": "http://github.com/Innmind/StackTrace",
+            "keywords": [
+                "exception",
+                "inspect",
+                "stack trace"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/StackTrace/issues",
+                "source": "https://github.com/Innmind/StackTrace/tree/4.2.0"
+            },
+            "time": "2025-06-07T15:54:38+00:00"
+        },
+        {
+            "name": "innmind/time-continuum",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/TimeContinuum.git",
+                "reference": "97f415372f6b15151c1f05e1b71c264c313b06d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/TimeContinuum/zipball/97f415372f6b15151c1f05e1b71c264c313b06d2",
+                "reference": "97f415372f6b15151c1f05e1b71c264c313b06d2",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/immutable": "~5.0",
+                "php": "~8.2",
+                "psr/log": "~3.0"
+            },
+            "conflict": {
+                "innmind/black-box": "<5.0|~7.0"
+            },
+            "provide": {
+                "innmind/black-box-sets": "5.0"
+            },
+            "require-dev": {
+                "innmind/black-box": "~5.8|^6.0.1",
+                "innmind/coding-standard": "^2.0.1",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "suggest": {
+                "innmind/black-box": "For property based testing"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\TimeContinuum\\": "src/",
+                    "Fixtures\\Innmind\\TimeContinuum\\": "fixtures/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Library to manipulate time",
+            "homepage": "http://github.com/Innmind/TimeContinuum",
+            "keywords": [
+                "time"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/TimeContinuum/issues",
+                "source": "https://github.com/Innmind/TimeContinuum/tree/4.2.0"
+            },
+            "time": "2025-06-02T16:54:23+00:00"
+        },
+        {
+            "name": "innmind/time-warp",
+            "version": "4.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/TimeWarp.git",
+                "reference": "1405c234c4dce5669763e0d367d030de54b52c45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/TimeWarp/zipball/1405c234c4dce5669763e0d367d030de54b52c45",
+                "reference": "1405c234c4dce5669763e0d367d030de54b52c45",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/immutable": "~5.12",
+                "innmind/time-continuum": "~4.1",
+                "php": "~8.2",
+                "psr/log": "~3.0"
+            },
+            "require-dev": {
+                "innmind/black-box": "~6.1",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\TimeWarp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Time warp",
+            "homepage": "http://github.com/Innmind/TimeWarp",
+            "keywords": [
+                "time",
+                "warp"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/TimeWarp/issues",
+                "source": "https://github.com/Innmind/TimeWarp/tree/4.1.1"
+            },
+            "time": "2025-08-18T16:25:52+00:00"
+        },
+        {
+            "name": "innmind/type",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/type.git",
+                "reference": "e117f3337b20d9c57da4d582200c7a3cd5fabbf2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/type/zipball/e117f3337b20d9c57da4d582200c7a3cd5fabbf2",
+                "reference": "e117f3337b20d9c57da4d582200c7a3cd5fabbf2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/black-box": "~5.1",
+                "innmind/coding-standard": "~2.0",
+                "vimeo/psalm": "~5.13"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Type\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "homepage": "http://github.com/innmind/type",
+            "support": {
+                "issues": "http://github.com/innmind/type/issues",
+                "source": "https://github.com/Innmind/type/tree/1.2.0"
+            },
+            "time": "2024-02-17T08:56:18+00:00"
+        },
+        {
+            "name": "innmind/url",
+            "version": "4.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/Url.git",
+                "reference": "42e8f05cd388b1dd01d0d07a47308d5424cfb772"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/Url/zipball/42e8f05cd388b1dd01d0d07a47308d5424cfb772",
+                "reference": "42e8f05cd388b1dd01d0d07a47308d5424cfb772",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/immutable": "~4.15|~5.0",
+                "league/uri-components": "~2.0",
+                "league/uri-parser": "~1.2",
+                "php": "~8.2"
+            },
+            "conflict": {
+                "innmind/black-box": "<5.0|~7.0"
+            },
+            "provide": {
+                "innmind/black-box-sets": "5.0"
+            },
+            "require-dev": {
+                "innmind/black-box": "~5.0|^6.0.1",
+                "innmind/coding-standard": "~2.0",
+                "phpunit/phpunit": "~10.2|~11.0|~12.0",
+                "vimeo/psalm": "~5.26"
+            },
+            "suggest": {
+                "innmind/black-box": "For property based testing"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Url\\": "src/",
+                    "Fixtures\\Innmind\\Url\\": "fixtures/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Library to abstract url handling",
+            "homepage": "http://github.com/Innmind/Url",
+            "keywords": [
+                "url"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/Url/issues",
+                "source": "https://github.com/Innmind/Url/tree/4.4.0"
+            },
+            "time": "2025-03-20T14:17:05+00:00"
+        },
+        {
+            "name": "innmind/url-template",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/UrlTemplate.git",
+                "reference": "5f0ce44162baf8fe83f21af94c42dac7c9f86556"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/UrlTemplate/zipball/5f0ce44162baf8fe83f21af94c42dac7c9f86556",
+                "reference": "5f0ce44162baf8fe83f21af94c42dac7c9f86556",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/immutable": "~4.3|~5.0",
+                "innmind/url": "~4.1",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/black-box": "~5.5",
+                "innmind/coding-standard": "~2.0",
+                "phpunit/phpunit": "~10.2",
+                "vimeo/psalm": "~5.12"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\UrlTemplate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Url template expansion processor",
+            "homepage": "http://github.com/Innmind/UrlTemplate",
+            "keywords": [
+                "rfc6570",
+                "url template"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/UrlTemplate/issues",
+                "source": "https://github.com/Innmind/UrlTemplate/tree/3.1.0"
+            },
+            "time": "2023-09-16T16:47:22+00:00"
+        },
+        {
+            "name": "innmind/validation",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/validation.git",
+                "reference": "b3f53cc999f44cc23cb9e99bfcf530371bdcf60d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/validation/zipball/b3f53cc999f44cc23cb9e99bfcf530371bdcf60d",
+                "reference": "b3f53cc999f44cc23cb9e99bfcf530371bdcf60d",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/immutable": "~5.19",
+                "innmind/time-continuum": "~3.4|^4.0.2",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/black-box": "~6.1",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Validation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "homepage": "http://github.com/innmind/validation",
+            "support": {
+                "issues": "http://github.com/innmind/validation/issues",
+                "source": "https://github.com/Innmind/validation/tree/2.3.0"
+            },
+            "time": "2025-09-15T12:44:16+00:00"
+        },
+        {
+            "name": "innmind/xml",
+            "version": "8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Innmind/XML.git",
+                "reference": "29d788a7e577a27d25167c7055bb88c129080473"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Innmind/XML/zipball/29d788a7e577a27d25167c7055bb88c129080473",
+                "reference": "29d788a7e577a27d25167c7055bb88c129080473",
+                "shasum": ""
+            },
+            "require": {
+                "innmind/filesystem": "~8.1",
+                "innmind/immutable": "~5.15",
+                "php": "~8.2"
+            },
+            "require-dev": {
+                "innmind/black-box": "^6.4.1",
+                "innmind/coding-standard": "~2.0",
+                "innmind/static-analysis": "^1.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Innmind\\Xml\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baptiste Langlade",
+                    "email": "baptiste.langlade@hey.com"
+                }
+            ],
+            "description": "Library to abstract xml manipulation",
+            "homepage": "http://github.com/Innmind/XML",
+            "keywords": [
+                "xml"
+            ],
+            "support": {
+                "issues": "http://github.com/Innmind/XML/issues",
+                "source": "https://github.com/Innmind/XML/tree/8.0.0"
+            },
+            "time": "2025-06-01T14:33:39+00:00"
+        },
+        {
+            "name": "league/uri-components",
+            "version": "2.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/uri-components.git",
+                "reference": "c93837294fe9021d518fd3ea4c5f3fbba8b8ddeb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/uri-components/zipball/c93837294fe9021d518fd3ea4c5f3fbba8b8ddeb",
+                "reference": "c93837294fe9021d518fd3ea4c5f3fbba8b8ddeb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "league/uri-interfaces": "^2.3",
+                "php": "^7.4 || ^8.0",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^v3.22.0",
+                "guzzlehttp/psr7": "^2.2",
+                "laminas/laminas-diactoros": "^2.11",
+                "league/uri": "^6.0",
+                "phpstan/phpstan": "^1.10.28",
+                "phpstan/phpstan-deprecation-rules": "^1.1.4",
+                "phpstan/phpstan-phpunit": "^1.3.13",
+                "phpstan/phpstan-strict-rules": "^1.5.1",
+                "phpunit/phpunit": "^9.6.10"
+            },
+            "suggest": {
+                "ext-fileinfo": "Needed to create Data URI from a filepath",
+                "ext-gmp": "to improve handle IPV4 parsing",
+                "ext-intl": "to handle IDN host",
+                "jeremykendall/php-domain-parser": "Public Suffix and Top Level Domain parsing implemented in PHP",
+                "league/uri": "to allow manipulating URI objects",
+                "php-64bit": "to improve handle IPV4 parsing",
+                "psr/http-message-implementation": "to allow manipulating PSR-7 Uri objects"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Uri\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://nyamsprod.com"
+                }
+            ],
+            "description": "URI components manipulation library",
+            "homepage": "http://uri.thephpleague.com",
+            "keywords": [
+                "authority",
+                "components",
+                "fragment",
+                "host",
+                "path",
+                "port",
+                "query",
+                "rfc3986",
+                "scheme",
+                "uri",
+                "url",
+                "userinfo"
+            ],
+            "support": {
+                "source": "https://github.com/thephpleague/uri-components/tree/2.4.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/nyamsprod",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-08-13T19:53:57+00:00"
+        },
+        {
+            "name": "league/uri-interfaces",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/uri-interfaces.git",
+                "reference": "00e7e2943f76d8cb50c7dfdc2f6dee356e15e383"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/uri-interfaces/zipball/00e7e2943f76d8cb50c7dfdc2f6dee356e15e383",
+                "reference": "00e7e2943f76d8cb50c7dfdc2f6dee356e15e383",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.19",
+                "phpstan/phpstan": "^0.12.90",
+                "phpstan/phpstan-phpunit": "^0.12.19",
+                "phpstan/phpstan-strict-rules": "^0.12.9",
+                "phpunit/phpunit": "^8.5.15 || ^9.5"
+            },
+            "suggest": {
+                "ext-intl": "to use the IDNA feature",
+                "symfony/intl": "to use the IDNA feature via Symfony Polyfill"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Uri\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://nyamsprod.com"
+                }
+            ],
+            "description": "Common interface for URI representation",
+            "homepage": "http://github.com/thephpleague/uri-interfaces",
+            "keywords": [
+                "rfc3986",
+                "rfc3987",
+                "uri",
+                "url"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/uri-interfaces/issues",
+                "source": "https://github.com/thephpleague/uri-interfaces/tree/2.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/nyamsprod",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-06-28T04:27:21+00:00"
+        },
+        {
+            "name": "league/uri-parser",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/uri-parser.git",
+                "reference": "671548427e4c932352d9b9279fdfa345bf63fa00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/uri-parser/zipball/671548427e4c932352d9b9279fdfa345bf63fa00",
+                "reference": "671548427e4c932352d9b9279fdfa345bf63fa00",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.0",
+                "phpstan/phpstan": "^0.9.2",
+                "phpstan/phpstan-phpunit": "^0.9.4",
+                "phpstan/phpstan-strict-rules": "^0.9.0",
+                "phpunit/phpunit": "^6.0"
+            },
+            "suggest": {
+                "ext-intl": "Allow parsing RFC3987 compliant hosts",
+                "league/uri-schemes": "Allow validating and normalizing URI parsing results"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "League\\Uri\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://nyamsprod.com"
+                }
+            ],
+            "description": "userland URI parser RFC 3986 compliant",
+            "homepage": "https://github.com/thephpleague/uri-parser",
+            "keywords": [
+                "parse_url",
+                "parser",
+                "rfc3986",
+                "rfc3987",
+                "uri",
+                "url"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/uri-parser/issues",
+                "source": "https://github.com/thephpleague/uri-parser/tree/master"
+            },
+            "abandoned": "league/uri-interfaces",
+            "time": "2018-11-22T07:55:51+00:00"
+        },
+        {
+            "name": "masterminds/html5",
+            "version": "2.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Masterminds/html5-php.git",
+                "reference": "fcf91eb64359852f00d921887b219479b4f21251"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/fcf91eb64359852f00d921887b219479b4f21251",
+                "reference": "fcf91eb64359852f00d921887b219479b4f21251",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.7.21 || ^6 || ^7 || ^8 || ^9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Masterminds\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matt Butcher",
+                    "email": "technosophos@gmail.com"
+                },
+                {
+                    "name": "Matt Farina",
+                    "email": "matt@mattfarina.com"
+                },
+                {
+                    "name": "Asmir Mustafic",
+                    "email": "goetas@gmail.com"
+                }
+            ],
+            "description": "An HTML5 parser and serializer.",
+            "homepage": "http://masterminds.github.io/html5-php",
+            "keywords": [
+                "HTML5",
+                "dom",
+                "html",
+                "parser",
+                "querypath",
+                "serializer",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/Masterminds/html5-php/issues",
+                "source": "https://github.com/Masterminds/html5-php/tree/2.10.0"
+            },
+            "time": "2025-07-25T09:04:22+00:00"
+        },
+        {
+            "name": "myclabs/deep-copy",
+            "version": "1.13.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/myclabs/DeepCopy.git",
+                "reference": "07d290f0c47959fd5eed98c95ee5602db07e0b6a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/07d290f0c47959fd5eed98c95ee5602db07e0b6a",
+                "reference": "07d290f0c47959fd5eed98c95ee5602db07e0b6a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "conflict": {
+                "doctrine/collections": "<1.6.8",
+                "doctrine/common": "<2.13.3 || >=3 <3.2.2"
+            },
+            "require-dev": {
+                "doctrine/collections": "^1.6.8",
+                "doctrine/common": "^2.13.3 || ^3.2.2",
+                "phpspec/prophecy": "^1.10",
+                "phpunit/phpunit": "^7.5.20 || ^8.5.23 || ^9.5.13"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/DeepCopy/deep_copy.php"
+                ],
+                "psr-4": {
+                    "DeepCopy\\": "src/DeepCopy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Create deep copies (clones) of your objects",
+            "keywords": [
+                "clone",
+                "copy",
+                "duplicate",
+                "object",
+                "object graph"
+            ],
+            "support": {
+                "issues": "https://github.com/myclabs/DeepCopy/issues",
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.4"
+            },
+            "funding": [
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/myclabs/deep-copy",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-08-01T08:46:24+00:00"
+        },
+        {
+            "name": "nikic/php-parser",
+            "version": "v5.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2",
+                "reference": "f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-json": "*",
+                "ext-tokenizer": "*",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "ircmaxell/php-yacc": "^0.0.7",
+                "phpunit/phpunit": "^9.0"
+            },
+            "bin": [
+                "bin/php-parse"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpParser\\": "lib/PhpParser"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/nikic/PHP-Parser/issues",
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.6.1"
+            },
+            "time": "2025-08-13T20:13:15+00:00"
+        },
+        {
+            "name": "phar-io/manifest",
+            "version": "2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phar-io/manifest.git",
+                "reference": "54750ef60c58e43759730615a392c31c80e23176"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phar-io/manifest/zipball/54750ef60c58e43759730615a392c31c80e23176",
+                "reference": "54750ef60c58e43759730615a392c31c80e23176",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "ext-phar": "*",
+                "ext-xmlwriter": "*",
+                "phar-io/version": "^3.0.1",
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Arne Blankerts",
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sebastian Heuer",
+                    "email": "sebastian@phpeople.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
+            "support": {
+                "issues": "https://github.com/phar-io/manifest/issues",
+                "source": "https://github.com/phar-io/manifest/tree/2.0.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/theseer",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-03-03T12:33:53+00:00"
+        },
+        {
+            "name": "phar-io/version",
+            "version": "3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phar-io/version.git",
+                "reference": "4f7fd7836c6f332bb2933569e566a0d6c4cbed74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phar-io/version/zipball/4f7fd7836c6f332bb2933569e566a0d6c4cbed74",
+                "reference": "4f7fd7836c6f332bb2933569e566a0d6c4cbed74",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Arne Blankerts",
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sebastian Heuer",
+                    "email": "sebastian@phpeople.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Library for handling version information and constraints",
+            "support": {
+                "issues": "https://github.com/phar-io/version/issues",
+                "source": "https://github.com/phar-io/version/tree/3.2.1"
+            },
+            "time": "2022-02-21T01:04:05+00:00"
+        },
+        {
+            "name": "phpunit/php-code-coverage",
+            "version": "12.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
+                "reference": "67e8aed88f93d0e6e1cb7effe1a2dfc2fee6022c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/67e8aed88f93d0e6e1cb7effe1a2dfc2fee6022c",
+                "reference": "67e8aed88f93d0e6e1cb7effe1a2dfc2fee6022c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "ext-xmlwriter": "*",
+                "nikic/php-parser": "^5.6.1",
+                "php": ">=8.3",
+                "phpunit/php-file-iterator": "^6.0",
+                "phpunit/php-text-template": "^5.0",
+                "sebastian/complexity": "^5.0",
+                "sebastian/environment": "^8.0.3",
+                "sebastian/lines-of-code": "^4.0",
+                "sebastian/version": "^6.0",
+                "theseer/tokenizer": "^1.2.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12.3.7"
+            },
+            "suggest": {
+                "ext-pcov": "PHP extension that provides line coverage",
+                "ext-xdebug": "PHP extension that provides line coverage as well as branch and path coverage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "12.4.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Library that provides collection, processing, and rendering functionality for PHP code coverage information.",
+            "homepage": "https://github.com/sebastianbergmann/php-code-coverage",
+            "keywords": [
+                "coverage",
+                "testing",
+                "xunit"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
+                "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/12.4.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpunit/php-code-coverage",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-09-24T13:44:41+00:00"
+        },
+        {
+            "name": "phpunit/php-file-iterator",
+            "version": "6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
+                "reference": "961bc913d42fe24a257bfff826a5068079ac7782"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/961bc913d42fe24a257bfff826a5068079ac7782",
+                "reference": "961bc913d42fe24a257bfff826a5068079ac7782",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "6.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "FilterIterator implementation that filters files based on a list of suffixes.",
+            "homepage": "https://github.com/sebastianbergmann/php-file-iterator/",
+            "keywords": [
+                "filesystem",
+                "iterator"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-file-iterator/issues",
+                "security": "https://github.com/sebastianbergmann/php-file-iterator/security/policy",
+                "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/6.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-02-07T04:58:37+00:00"
+        },
+        {
+            "name": "phpunit/php-invoker",
+            "version": "6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-invoker.git",
+                "reference": "12b54e689b07a25a9b41e57736dfab6ec9ae5406"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-invoker/zipball/12b54e689b07a25a9b41e57736dfab6ec9ae5406",
+                "reference": "12b54e689b07a25a9b41e57736dfab6ec9ae5406",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3"
+            },
+            "require-dev": {
+                "ext-pcntl": "*",
+                "phpunit/phpunit": "^12.0"
+            },
+            "suggest": {
+                "ext-pcntl": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "6.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Invoke callables with a timeout",
+            "homepage": "https://github.com/sebastianbergmann/php-invoker/",
+            "keywords": [
+                "process"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-invoker/issues",
+                "security": "https://github.com/sebastianbergmann/php-invoker/security/policy",
+                "source": "https://github.com/sebastianbergmann/php-invoker/tree/6.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-02-07T04:58:58+00:00"
+        },
+        {
+            "name": "phpunit/php-text-template",
+            "version": "5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-text-template.git",
+                "reference": "e1367a453f0eda562eedb4f659e13aa900d66c53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/e1367a453f0eda562eedb4f659e13aa900d66c53",
+                "reference": "e1367a453f0eda562eedb4f659e13aa900d66c53",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Simple template engine.",
+            "homepage": "https://github.com/sebastianbergmann/php-text-template/",
+            "keywords": [
+                "template"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-text-template/issues",
+                "security": "https://github.com/sebastianbergmann/php-text-template/security/policy",
+                "source": "https://github.com/sebastianbergmann/php-text-template/tree/5.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-02-07T04:59:16+00:00"
+        },
+        {
+            "name": "phpunit/php-timer",
+            "version": "8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-timer.git",
+                "reference": "f258ce36aa457f3aa3339f9ed4c81fc66dc8c2cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/f258ce36aa457f3aa3339f9ed4c81fc66dc8c2cc",
+                "reference": "f258ce36aa457f3aa3339f9ed4c81fc66dc8c2cc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "8.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Utility class for timing",
+            "homepage": "https://github.com/sebastianbergmann/php-timer/",
+            "keywords": [
+                "timer"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-timer/issues",
+                "security": "https://github.com/sebastianbergmann/php-timer/security/policy",
+                "source": "https://github.com/sebastianbergmann/php-timer/tree/8.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-02-07T04:59:38+00:00"
+        },
+        {
+            "name": "phpunit/phpunit",
+            "version": "12.3.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/phpunit.git",
+                "reference": "13e9b2bea9327b094176147250d2c10319a10f5b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/13e9b2bea9327b094176147250d2c10319a10f5b",
+                "reference": "13e9b2bea9327b094176147250d2c10319a10f5b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-libxml": "*",
+                "ext-mbstring": "*",
+                "ext-xml": "*",
+                "ext-xmlwriter": "*",
+                "myclabs/deep-copy": "^1.13.4",
+                "phar-io/manifest": "^2.0.4",
+                "phar-io/version": "^3.2.1",
+                "php": ">=8.3",
+                "phpunit/php-code-coverage": "^12.3.8",
+                "phpunit/php-file-iterator": "^6.0.0",
+                "phpunit/php-invoker": "^6.0.0",
+                "phpunit/php-text-template": "^5.0.0",
+                "phpunit/php-timer": "^8.0.0",
+                "sebastian/cli-parser": "^4.2.0",
+                "sebastian/comparator": "^7.1.3",
+                "sebastian/diff": "^7.0.0",
+                "sebastian/environment": "^8.0.3",
+                "sebastian/exporter": "^7.0.2",
+                "sebastian/global-state": "^8.0.2",
+                "sebastian/object-enumerator": "^7.0.0",
+                "sebastian/type": "^6.0.3",
+                "sebastian/version": "^6.0.0",
+                "staabm/side-effects-detector": "^1.0.5"
+            },
+            "bin": [
+                "phpunit"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "12.3-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Framework/Assert/Functions.php"
+                ],
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "The PHP Unit Testing framework.",
+            "homepage": "https://phpunit.de/",
+            "keywords": [
+                "phpunit",
+                "testing",
+                "xunit"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/phpunit/issues",
+                "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/12.3.14"
+            },
+            "funding": [
+                {
+                    "url": "https://phpunit.de/sponsors.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpunit/phpunit",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-09-24T06:34:27+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/1.1"
+            },
+            "time": "2023-04-04T09:50:52+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/3.0.2"
+            },
+            "time": "2024-09-11T13:17:53+00:00"
+        },
+        {
+            "name": "ramsey/collection",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/collection.git",
+                "reference": "344572933ad0181accbf4ba763e85a0306a8c5e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/collection/zipball/344572933ad0181accbf4ba763e85a0306a8c5e2",
+                "reference": "344572933ad0181accbf4ba763e85a0306a8c5e2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "captainhook/plugin-composer": "^5.3",
+                "ergebnis/composer-normalize": "^2.45",
+                "fakerphp/faker": "^1.24",
+                "hamcrest/hamcrest-php": "^2.0",
+                "jangregor/phpstan-prophecy": "^2.1",
+                "mockery/mockery": "^1.6",
+                "php-parallel-lint/php-console-highlighter": "^1.0",
+                "php-parallel-lint/php-parallel-lint": "^1.4",
+                "phpspec/prophecy-phpunit": "^2.3",
+                "phpstan/extension-installer": "^1.4",
+                "phpstan/phpstan": "^2.1",
+                "phpstan/phpstan-mockery": "^2.0",
+                "phpstan/phpstan-phpunit": "^2.0",
+                "phpunit/phpunit": "^10.5",
+                "ramsey/coding-standard": "^2.3",
+                "ramsey/conventional-commits": "^1.6",
+                "roave/security-advisories": "dev-latest"
+            },
+            "type": "library",
+            "extra": {
+                "captainhook": {
+                    "force-install": true
+                },
+                "ramsey/conventional-commits": {
+                    "configFile": "conventional-commits.json"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ramsey\\Collection\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Ramsey",
+                    "email": "ben@benramsey.com",
+                    "homepage": "https://benramsey.com"
+                }
+            ],
+            "description": "A PHP library for representing and manipulating collections.",
+            "keywords": [
+                "array",
+                "collection",
+                "hash",
+                "map",
+                "queue",
+                "set"
+            ],
+            "support": {
+                "issues": "https://github.com/ramsey/collection/issues",
+                "source": "https://github.com/ramsey/collection/tree/2.1.1"
+            },
+            "time": "2025-03-22T05:38:12+00:00"
+        },
+        {
+            "name": "ramsey/uuid",
+            "version": "4.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/uuid.git",
+                "reference": "81f941f6f729b1e3ceea61d9d014f8b6c6800440"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/81f941f6f729b1e3ceea61d9d014f8b6c6800440",
+                "reference": "81f941f6f729b1e3ceea61d9d014f8b6c6800440",
+                "shasum": ""
+            },
+            "require": {
+                "brick/math": "^0.8.8 || ^0.9 || ^0.10 || ^0.11 || ^0.12 || ^0.13 || ^0.14",
+                "php": "^8.0",
+                "ramsey/collection": "^1.2 || ^2.0"
+            },
+            "replace": {
+                "rhumsaa/uuid": "self.version"
+            },
+            "require-dev": {
+                "captainhook/captainhook": "^5.25",
+                "captainhook/plugin-composer": "^5.3",
+                "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+                "ergebnis/composer-normalize": "^2.47",
+                "mockery/mockery": "^1.6",
+                "paragonie/random-lib": "^2",
+                "php-mock/php-mock": "^2.6",
+                "php-mock/php-mock-mockery": "^1.5",
+                "php-parallel-lint/php-parallel-lint": "^1.4.0",
+                "phpbench/phpbench": "^1.2.14",
+                "phpstan/extension-installer": "^1.4",
+                "phpstan/phpstan": "^2.1",
+                "phpstan/phpstan-mockery": "^2.0",
+                "phpstan/phpstan-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.6",
+                "slevomat/coding-standard": "^8.18",
+                "squizlabs/php_codesniffer": "^3.13"
+            },
+            "suggest": {
+                "ext-bcmath": "Enables faster math with arbitrary-precision integers using BCMath.",
+                "ext-gmp": "Enables faster math with arbitrary-precision integers using GMP.",
+                "ext-uuid": "Enables the use of PeclUuidTimeGenerator and PeclUuidRandomGenerator.",
+                "paragonie/random-lib": "Provides RandomLib for use with the RandomLibAdapter",
+                "ramsey/uuid-doctrine": "Allows the use of Ramsey\\Uuid\\Uuid as Doctrine field type."
+            },
+            "type": "library",
+            "extra": {
+                "captainhook": {
+                    "force-install": true
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Ramsey\\Uuid\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A PHP library for generating and working with universally unique identifiers (UUIDs).",
+            "keywords": [
+                "guid",
+                "identifier",
+                "uuid"
+            ],
+            "support": {
+                "issues": "https://github.com/ramsey/uuid/issues",
+                "source": "https://github.com/ramsey/uuid/tree/4.9.1"
+            },
+            "time": "2025-09-04T20:59:21+00:00"
+        },
+        {
+            "name": "sebastian/cli-parser",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/cli-parser.git",
+                "reference": "90f41072d220e5c40df6e8635f5dafba2d9d4d04"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/cli-parser/zipball/90f41072d220e5c40df6e8635f5dafba2d9d4d04",
+                "reference": "90f41072d220e5c40df6e8635f5dafba2d9d4d04",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Library for parsing CLI options",
+            "homepage": "https://github.com/sebastianbergmann/cli-parser",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/cli-parser/issues",
+                "security": "https://github.com/sebastianbergmann/cli-parser/security/policy",
+                "source": "https://github.com/sebastianbergmann/cli-parser/tree/4.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/sebastian/cli-parser",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-09-14T09:36:45+00:00"
+        },
+        {
+            "name": "sebastian/comparator",
+            "version": "7.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/comparator.git",
+                "reference": "dc904b4bb3ab070865fa4068cd84f3da8b945148"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/dc904b4bb3ab070865fa4068cd84f3da8b945148",
+                "reference": "dc904b4bb3ab070865fa4068cd84f3da8b945148",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-mbstring": "*",
+                "php": ">=8.3",
+                "sebastian/diff": "^7.0",
+                "sebastian/exporter": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12.2"
+            },
+            "suggest": {
+                "ext-bcmath": "For comparing BcMath\\Number objects"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "7.1-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
+                    "name": "Jeff Welch",
+                    "email": "whatthejeff@gmail.com"
+                },
+                {
+                    "name": "Volker Dusch",
+                    "email": "github@wallbash.com"
+                },
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@2bepublished.at"
+                }
+            ],
+            "description": "Provides the functionality to compare PHP values for equality",
+            "homepage": "https://github.com/sebastianbergmann/comparator",
+            "keywords": [
+                "comparator",
+                "compare",
+                "equality"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/comparator/issues",
+                "security": "https://github.com/sebastianbergmann/comparator/security/policy",
+                "source": "https://github.com/sebastianbergmann/comparator/tree/7.1.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/sebastian/comparator",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-08-20T11:27:00+00:00"
+        },
+        {
+            "name": "sebastian/complexity",
+            "version": "5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/complexity.git",
+                "reference": "bad4316aba5303d0221f43f8cee37eb58d384bbb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/complexity/zipball/bad4316aba5303d0221f43f8cee37eb58d384bbb",
+                "reference": "bad4316aba5303d0221f43f8cee37eb58d384bbb",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "^5.0",
+                "php": ">=8.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Library for calculating the complexity of PHP code units",
+            "homepage": "https://github.com/sebastianbergmann/complexity",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/complexity/issues",
+                "security": "https://github.com/sebastianbergmann/complexity/security/policy",
+                "source": "https://github.com/sebastianbergmann/complexity/tree/5.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-02-07T04:55:25+00:00"
+        },
+        {
+            "name": "sebastian/diff",
+            "version": "7.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/diff.git",
+                "reference": "7ab1ea946c012266ca32390913653d844ecd085f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/7ab1ea946c012266ca32390913653d844ecd085f",
+                "reference": "7ab1ea946c012266ca32390913653d844ecd085f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12.0",
+                "symfony/process": "^7.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "7.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
+                    "name": "Kore Nordmann",
+                    "email": "mail@kore-nordmann.de"
+                }
+            ],
+            "description": "Diff implementation",
+            "homepage": "https://github.com/sebastianbergmann/diff",
+            "keywords": [
+                "diff",
+                "udiff",
+                "unidiff",
+                "unified diff"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/diff/issues",
+                "security": "https://github.com/sebastianbergmann/diff/security/policy",
+                "source": "https://github.com/sebastianbergmann/diff/tree/7.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-02-07T04:55:46+00:00"
+        },
+        {
+            "name": "sebastian/environment",
+            "version": "8.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/environment.git",
+                "reference": "24a711b5c916efc6d6e62aa65aa2ec98fef77f68"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/24a711b5c916efc6d6e62aa65aa2ec98fef77f68",
+                "reference": "24a711b5c916efc6d6e62aa65aa2ec98fef77f68",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12.0"
+            },
+            "suggest": {
+                "ext-posix": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "8.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                }
+            ],
+            "description": "Provides functionality to handle HHVM/PHP environments",
+            "homepage": "https://github.com/sebastianbergmann/environment",
+            "keywords": [
+                "Xdebug",
+                "environment",
+                "hhvm"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/environment/issues",
+                "security": "https://github.com/sebastianbergmann/environment/security/policy",
+                "source": "https://github.com/sebastianbergmann/environment/tree/8.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/sebastian/environment",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-08-12T14:11:56+00:00"
+        },
+        {
+            "name": "sebastian/exporter",
+            "version": "7.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/exporter.git",
+                "reference": "016951ae10980765e4e7aee491eb288c64e505b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/016951ae10980765e4e7aee491eb288c64e505b7",
+                "reference": "016951ae10980765e4e7aee491eb288c64e505b7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=8.3",
+                "sebastian/recursion-context": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "7.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
+                    "name": "Jeff Welch",
+                    "email": "whatthejeff@gmail.com"
+                },
+                {
+                    "name": "Volker Dusch",
+                    "email": "github@wallbash.com"
+                },
+                {
+                    "name": "Adam Harvey",
+                    "email": "aharvey@php.net"
+                },
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
+            "description": "Provides the functionality to export PHP variables for visualization",
+            "homepage": "https://www.github.com/sebastianbergmann/exporter",
+            "keywords": [
+                "export",
+                "exporter"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/exporter/issues",
+                "security": "https://github.com/sebastianbergmann/exporter/security/policy",
+                "source": "https://github.com/sebastianbergmann/exporter/tree/7.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/sebastian/exporter",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-09-24T06:16:11+00:00"
+        },
+        {
+            "name": "sebastian/global-state",
+            "version": "8.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/global-state.git",
+                "reference": "ef1377171613d09edd25b7816f05be8313f9115d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/ef1377171613d09edd25b7816f05be8313f9115d",
+                "reference": "ef1377171613d09edd25b7816f05be8313f9115d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3",
+                "sebastian/object-reflector": "^5.0",
+                "sebastian/recursion-context": "^7.0"
+            },
+            "require-dev": {
+                "ext-dom": "*",
+                "phpunit/phpunit": "^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "8.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                }
+            ],
+            "description": "Snapshotting of global state",
+            "homepage": "https://www.github.com/sebastianbergmann/global-state",
+            "keywords": [
+                "global state"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/global-state/issues",
+                "security": "https://github.com/sebastianbergmann/global-state/security/policy",
+                "source": "https://github.com/sebastianbergmann/global-state/tree/8.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/sebastian/global-state",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-08-29T11:29:25+00:00"
+        },
+        {
+            "name": "sebastian/lines-of-code",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/lines-of-code.git",
+                "reference": "97ffee3bcfb5805568d6af7f0f893678fc076d2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/lines-of-code/zipball/97ffee3bcfb5805568d6af7f0f893678fc076d2f",
+                "reference": "97ffee3bcfb5805568d6af7f0f893678fc076d2f",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "^5.0",
+                "php": ">=8.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Library for counting the lines of code in PHP source code",
+            "homepage": "https://github.com/sebastianbergmann/lines-of-code",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/lines-of-code/issues",
+                "security": "https://github.com/sebastianbergmann/lines-of-code/security/policy",
+                "source": "https://github.com/sebastianbergmann/lines-of-code/tree/4.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-02-07T04:57:28+00:00"
+        },
+        {
+            "name": "sebastian/object-enumerator",
+            "version": "7.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/object-enumerator.git",
+                "reference": "1effe8e9b8e068e9ae228e542d5d11b5d16db894"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/object-enumerator/zipball/1effe8e9b8e068e9ae228e542d5d11b5d16db894",
+                "reference": "1effe8e9b8e068e9ae228e542d5d11b5d16db894",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3",
+                "sebastian/object-reflector": "^5.0",
+                "sebastian/recursion-context": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "7.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                }
+            ],
+            "description": "Traverses array structures and object graphs to enumerate all referenced objects",
+            "homepage": "https://github.com/sebastianbergmann/object-enumerator/",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/object-enumerator/issues",
+                "security": "https://github.com/sebastianbergmann/object-enumerator/security/policy",
+                "source": "https://github.com/sebastianbergmann/object-enumerator/tree/7.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-02-07T04:57:48+00:00"
+        },
+        {
+            "name": "sebastian/object-reflector",
+            "version": "5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/object-reflector.git",
+                "reference": "4bfa827c969c98be1e527abd576533293c634f6a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/object-reflector/zipball/4bfa827c969c98be1e527abd576533293c634f6a",
+                "reference": "4bfa827c969c98be1e527abd576533293c634f6a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                }
+            ],
+            "description": "Allows reflection of object attributes, including inherited and non-public ones",
+            "homepage": "https://github.com/sebastianbergmann/object-reflector/",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/object-reflector/issues",
+                "security": "https://github.com/sebastianbergmann/object-reflector/security/policy",
+                "source": "https://github.com/sebastianbergmann/object-reflector/tree/5.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-02-07T04:58:17+00:00"
+        },
+        {
+            "name": "sebastian/recursion-context",
+            "version": "7.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/recursion-context.git",
+                "reference": "0b01998a7d5b1f122911a66bebcb8d46f0c82d8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/0b01998a7d5b1f122911a66bebcb8d46f0c82d8c",
+                "reference": "0b01998a7d5b1f122911a66bebcb8d46f0c82d8c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "7.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
+                    "name": "Jeff Welch",
+                    "email": "whatthejeff@gmail.com"
+                },
+                {
+                    "name": "Adam Harvey",
+                    "email": "aharvey@php.net"
+                }
+            ],
+            "description": "Provides functionality to recursively process PHP variables",
+            "homepage": "https://github.com/sebastianbergmann/recursion-context",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/recursion-context/issues",
+                "security": "https://github.com/sebastianbergmann/recursion-context/security/policy",
+                "source": "https://github.com/sebastianbergmann/recursion-context/tree/7.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/sebastian/recursion-context",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-08-13T04:44:59+00:00"
+        },
+        {
+            "name": "sebastian/type",
+            "version": "6.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/type.git",
+                "reference": "e549163b9760b8f71f191651d22acf32d56d6d4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/type/zipball/e549163b9760b8f71f191651d22acf32d56d6d4d",
+                "reference": "e549163b9760b8f71f191651d22acf32d56d6d4d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "6.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Collection of value objects that represent the types of the PHP type system",
+            "homepage": "https://github.com/sebastianbergmann/type",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/type/issues",
+                "security": "https://github.com/sebastianbergmann/type/security/policy",
+                "source": "https://github.com/sebastianbergmann/type/tree/6.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/sebastian/type",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-08-09T06:57:12+00:00"
+        },
+        {
+            "name": "sebastian/version",
+            "version": "6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/version.git",
+                "reference": "3e6ccf7657d4f0a59200564b08cead899313b53c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/3e6ccf7657d4f0a59200564b08cead899313b53c",
+                "reference": "3e6ccf7657d4f0a59200564b08cead899313b53c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "6.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Library that helps with managing the version number of Git-hosted PHP projects",
+            "homepage": "https://github.com/sebastianbergmann/version",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/version/issues",
+                "security": "https://github.com/sebastianbergmann/version/security/policy",
+                "source": "https://github.com/sebastianbergmann/version/tree/6.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-02-07T05:00:38+00:00"
+        },
+        {
+            "name": "staabm/side-effects-detector",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/staabm/side-effects-detector.git",
+                "reference": "d8334211a140ce329c13726d4a715adbddd0a163"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/staabm/side-effects-detector/zipball/d8334211a140ce329c13726d4a715adbddd0a163",
+                "reference": "d8334211a140ce329c13726d4a715adbddd0a163",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/extension-installer": "^1.4.3",
+                "phpstan/phpstan": "^1.12.6",
+                "phpunit/phpunit": "^9.6.21",
+                "symfony/var-dumper": "^5.4.43",
+                "tomasvotruba/type-coverage": "1.0.0",
+                "tomasvotruba/unused-public": "1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A static analysis tool to detect side effects in PHP code",
+            "keywords": [
+                "static analysis"
+            ],
+            "support": {
+                "issues": "https://github.com/staabm/side-effects-detector/issues",
+                "source": "https://github.com/staabm/side-effects-detector/tree/1.0.5"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/staabm",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-10-20T05:08:20+00:00"
+        },
+        {
+            "name": "symfony/deprecation-contracts",
+            "version": "v3.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/deprecation-contracts.git",
+                "reference": "63afe740e99a13ba87ec199bb07bbdee937a5b62"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/63afe740e99a13ba87ec199bb07bbdee937a5b62",
+                "reference": "63afe740e99a13ba87ec199bb07bbdee937a5b62",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "type": "library",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
+                "branch-alias": {
+                    "dev-main": "3.6-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "function.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "A generic function and convention to trigger deprecation notices",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-09-25T14:21:43+00:00"
+        },
+        {
+            "name": "symfony/dom-crawler",
+            "version": "v7.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dom-crawler.git",
+                "reference": "6cb272cbec4dc7a30a853d2931766b03bea92dda"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/6cb272cbec4dc7a30a853d2931766b03bea92dda",
+                "reference": "6cb272cbec4dc7a30a853d2931766b03bea92dda",
+                "shasum": ""
+            },
+            "require": {
+                "masterminds/html5": "^2.6",
+                "php": ">=8.2",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "require-dev": {
+                "symfony/css-selector": "^6.4|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\DomCrawler\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Eases DOM navigation for HTML and XML documents",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/dom-crawler/tree/v7.0.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-02-12T11:15:03+00:00"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "v7.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/filesystem.git",
+                "reference": "edcbb768a186b5c3f25d0643159a787d3e63b7fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/edcbb768a186b5c3f25d0643159a787d3e63b7fd",
+                "reference": "edcbb768a186b5c3f25d0643159a787d3e63b7fd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-mbstring": "~1.8"
+            },
+            "require-dev": {
+                "symfony/process": "^6.4|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides basic utilities for the filesystem",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/filesystem/tree/v7.3.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-07-07T08:17:47+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.33.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "a3cc8b044a6ea513310cbd48ef7333b384945638"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/a3cc8b044a6ea513310cbd48ef7333b384945638",
+                "reference": "a3cc8b044a6ea513310cbd48ef7333b384945638",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "provide": {
+                "ext-ctype": "*"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.33.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-09-09T11:45:10+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.33.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "6d857f4d76bd4b343eac26d6b539585d2bc56493"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/6d857f4d76bd4b343eac26d6b539585d2bc56493",
+                "reference": "6d857f4d76bd4b343eac26d6b539585d2bc56493",
+                "shasum": ""
+            },
+            "require": {
+                "ext-iconv": "*",
+                "php": ">=7.2"
+            },
+            "provide": {
+                "ext-mbstring": "*"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.33.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-12-23T08:48:59+00:00"
+        },
+        {
+            "name": "symfony/var-dumper",
+            "version": "v7.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/var-dumper.git",
+                "reference": "34d8d4c4b9597347306d1ec8eb4e1319b1e6986f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/34d8d4c4b9597347306d1ec8eb4e1319b1e6986f",
+                "reference": "34d8d4c4b9597347306d1ec8eb4e1319b1e6986f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/deprecation-contracts": "^2.5|^3",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "conflict": {
+                "symfony/console": "<6.4"
+            },
+            "require-dev": {
+                "symfony/console": "^6.4|^7.0",
+                "symfony/http-kernel": "^6.4|^7.0",
+                "symfony/process": "^6.4|^7.0",
+                "symfony/uid": "^6.4|^7.0",
+                "twig/twig": "^3.12"
+            },
+            "bin": [
+                "Resources/bin/var-dump-server"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "Resources/functions/dump.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Component\\VarDumper\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides mechanisms for walking through any arbitrary PHP variable",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "debug",
+                "dump"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/var-dumper/tree/v7.3.3"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-08-13T11:49:31+00:00"
+        },
+        {
+            "name": "theseer/tokenizer",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/theseer/tokenizer.git",
+                "reference": "737eda637ed5e28c3413cb1ebe8bb52cbf1ca7a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/737eda637ed5e28c3413cb1ebe8bb52cbf1ca7a2",
+                "reference": "737eda637ed5e28c3413cb1ebe8bb52cbf1ca7a2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-tokenizer": "*",
+                "ext-xmlwriter": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Arne Blankerts",
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
+            "support": {
+                "issues": "https://github.com/theseer/tokenizer/issues",
+                "source": "https://github.com/theseer/tokenizer/tree/1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/theseer",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-03-03T12:36:25+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}
