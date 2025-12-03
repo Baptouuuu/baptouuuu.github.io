@@ -21,16 +21,12 @@ Vidéo non disponible pour le moment.
 
 ## Archiver efficacement de grands volumes de données grâce aux monades
 
-![](conferences/retex archivage/ad.png)
+<iframe class="video" src="https://www.youtube.com/embed/8FqF_LCmjr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Vidéo non disponible pour le moment.
+- [Slides](conferences/retex archivage/slides.pdf)
+- [Demo](conferences/retex archivage/demo.mp4) ([Code](https://github.com/Baptouuuu/baptouuuu.github.io/blob/main/docs/conferences/retex%20archivage/demo/README.md))
 
-[Slides](conferences/retex archivage/slides.pdf)
-
-??? example "Demo"
-    <video controls><source src="retex%20archivage/demo.mp4" type="video/mp4"/></video>
-
-    [Code](https://github.com/Baptouuuu/baptouuuu.github.io/blob/main/docs/conferences/retex%20archivage/demo/README.md)
+## Historique
 
 ??? info "Et si on repensait les ORMs ?"
 
