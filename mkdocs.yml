@@ -6,6 +6,9 @@ nav:
   - Blog:
     - blog/index.md
 
+exclude_docs: |
+  conferences/**/*.md
+
 theme:
   name: material
   logo: assets/logo.svg
