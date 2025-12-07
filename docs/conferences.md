@@ -8,16 +8,11 @@ hide:
 
 ## Et si le futur de la programmation concurrentielle avait déjà 50 ans ?
 
-![](conferences/actor model/ad.png)
+<iframe class="video" src="https://www.youtube.com/embed/E3pmkKQNC7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Vidéo non disponible pour le moment.
 
-[Slides](conferences/actor model/slides.pdf)
-
-??? example "Demo"
-    <video controls><source src="actor%20model/demo.mp4" type="video/mp4"/></video>
-
-    [Code](https://github.com/Innmind/actors/pull/4)
+- [Slides](conferences/actor model/slides.pdf)
+- [Demo](conferences/actor model/demo.mp4) ([Code](https://github.com/Innmind/actors/pull/4))
 
 ## Archiver efficacement de grands volumes de données grâce aux monades
 
