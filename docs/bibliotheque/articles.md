@@ -26,6 +26,12 @@ Cette approche met en lumière la complexité qu'on introduit dans nos applicati
 
 Et les outils de Property Based Testing sont sans relâche et trouveront toujours la petite bête qui se fera poser la question : est-ce que cette permutation devrait être possible ?
 
+## [Write code that is easy to delete, not easy to extend.](https://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to)
+
+Tout est dans le titre.
+
+Retrospectivement je rajouterais que l'immuabilité et la programmation fonctionnelle sont de bon outils pour atteindre cet objectif.
+
 ## [Learn You Some Erlang for great good!](https://learnyousomeerlang.com)
 
 Je suis tombé ce site pour arriver à lire le code source de RabbitMQ et découvrir une implémentation de l'Actor Model.

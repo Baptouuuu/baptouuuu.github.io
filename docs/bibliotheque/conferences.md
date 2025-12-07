@@ -28,6 +28,29 @@ C'est une généralisation du principe de [variance](https://en.wikipedia.org/wi
 
 (La deuxième moitié de la conférence est très technique et difficile à appréhender.)
 
+## The future of programming
+
+<iframe class="video" title="vimeo-player" src="https://player.vimeo.com/video/71278954" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+
+Cette conférence de 2013 se place 40 ans en arrière pour parler des progrès de l'époque et de prédire le futur de la programmation.
+
+C'est un rappel que malgré les évolutions de notre métier on n'a pas tant appris que ça du passé. Toute ces décennies plus tard on code toujours sensiblement de la même façon.
+
+Cette conférence a été une forte motivation à explorer d'autres façons de coder et étudier d'anciennes idées qui pourraient s'avérer pertinentes de nos jours.
+
+Si vous voyez le nom de Bret Victor associé à une conférence, allez la voir ! C'est une expérience à chaque fois.
+
+## Boundaries
+
+<iframe class="video" src="https://www.youtube.com/embed/yTkzNHF6rMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+J'en retiens le concept de "functional core, imperative shell". L'idée est d'avoir le code métier définit avec du code pure (1) et les couches extérieures de façon impérative (2) car c'est plus pratique à gérer les changements d'états (3).
+{.annotate}
+
+1. au sens de la programmation fonctionnelle
+2. en général en programmation objet
+3. filesystem, base de données, etc... (tout ce qui est IO)
+
 ## L'architecture progressive
 
 <iframe class="video" src="https://www.youtube.com/embed/XyxvP5f67Po" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -45,3 +68,13 @@ Cette conférence m'a aidé à réaliser qu'on peut avoir le même outil (le cod
 Par "code" on entend le texte composant un programme là où "Code" est un standard. On peut donc écrire du code sans suivre un Code.
 
 En fonction du projet on voudra, ou non, suivre un Code. Par conséquent on n'ira pas voir les mêmes professionnels. Le parallèle fait entre un Handyman et un Electrician est très parlante. Les deux sont utiles, mais pas dans les mêmes contextes.
+
+## How to crash a plane
+
+<iframe class="video" title="vimeo-player" src="https://player.vimeo.com/video/173246615" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+
+Dans l'aviation il y a un dicton : On ne vit pas assez longtemps pour faire toutes les erreurs. L'idée est d'étudier les erreurs des autres pour éviter de les faire soi même, et c'est ce qu'on fait largement avec les conférences.
+
+Cette conférence retrace un crash d'avion en 1989 où contre toute attente une partie de l'équipage a survécu. La raison est attribué au [crew resource management](https://en.wikipedia.org/wiki/Crew_resource_management). La conférence fait le parallèle de cette pratique dans notre métier.
+
+Ca a été une des sources de motivation à aller explorer d'autres domaines, dont l'aviation, qui ont en général plus d'historique que l'informatique pour essayer d'en tirer des enseignements.
