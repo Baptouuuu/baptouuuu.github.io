@@ -280,6 +280,10 @@ class DocumentTest extends TestCase
 
 ## Et si on a vraiment pas le choix ?
 
+---
+
+## Traduction unique
+
 ^ avantage : doit forcer toute l'entreprise à adopter la même traduction.
 
 ---
