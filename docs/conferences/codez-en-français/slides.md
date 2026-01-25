@@ -208,7 +208,7 @@ final class ClasserDocument
         Id $id,
         array $metadonnees,
     ): Document {
-        /** @var array<array-key, mixed> $metadonnees */
+        /** @var list<Metadonnee> $metadonnees */
     }
 }
 ```
