@@ -41,9 +41,7 @@ theme: Fira, 6
 
 ---
 
-## Efalia
-
-todo insérer logo
+![inline](efalia.png)
 
 ^ refonte projet, échec de 2 ans, repartir de zéro en code (mais avec vision PO)
 
