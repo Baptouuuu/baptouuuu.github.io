@@ -353,7 +353,7 @@ $payload = $path->validate($request, 'en');
 
 ## Et si on embauche des employés non francophone ?
 
-^ d'autres problèmes avant le code (remote, timezone, etc...). Traduction automatique des naviageteurs pour doc et PRs
+^ d'autres problèmes avant le code (remote, timezone, etc...). Traduction automatique des navigateurs pour doc et PRs
 
 ---
 
