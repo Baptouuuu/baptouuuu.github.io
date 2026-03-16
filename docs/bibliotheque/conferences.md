@@ -12,6 +12,20 @@ Cette distinction est très utile lors de discussions techniques ou produits.
 
 Au delà de ce point, cette conférence est une mine d'or. A voir absolument !
 
+## If Russ Ackoff had given a TED Talk
+
+<iframe class="video" src="https://www.youtube.com/embed/OqEeIG8aPPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Cette vidéo cristallise la complexité de travailler sur n'importe quel système.
+
+La valeur d'un système est plus grand que la somme de ses composants. Modifier un composant affecte le système. Modifier le système affecte les composants. C'est cette interdépendance qui rend l'évolution d'un système complexe.
+
+Perdre de vue cette interdépendence en essayant d'améliorer un composant en isolation, c'est au mieux risquer de perdre du temps pour un gain négligeable pour le système et au pire détruire la valeur ajoutée du système.
+
+Les exemples donnés dans ce talk sont tellement simples que ce problème apparait comme une évidence.
+
+Et la beauté du [systems thinking](https://en.wikipedia.org/wiki/Systems_thinking) est que ça s'applique autant à la technique, qu'à un projet, une équipe, etc...
+
 ## Constraints Liberate, Liberties Constrain
 
 <iframe class="video" src="https://www.youtube.com/embed/GqmsQeSzMdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
