@@ -18,7 +18,7 @@ Les éléments rouge et bleu sont l'espace positif et le blanc l'espace négatif
 
 Il m'a fallu très longtemps avant de m'en rendre compte 🙈.
 
-Maintenant j'utilise cette approche pour identifier les données qu'une fonction, ou une API, peut manipuler. L'espace positif est l'ensemble des données autorisées et l'espace négatif qui ne le sont pas.
+Maintenant j'utilise cette approche pour identifier les données qu'une fonction, ou une API, peut manipuler. L'espace positif est l'ensemble des données autorisées et l'espace négatif celles qui ne le sont pas.
 
 Bien souvent l'espace positif est évident, mais parfois il demande plusieurs itérations avant de le définir correctement.
 
