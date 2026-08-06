@@ -16,7 +16,7 @@ Même si je peux avoir des opinions dans d'autres secteurs, je limite l'expressi
 
 Depuis le début des années 2010 ce sujet de l'IA, plus précisement les réseaux de neurones, m'intéresse avec des projets comme [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo) qui ont pu me faire rêver.
 
-En 2016, mon employeur de l'époque [Kibatic](https://kibatic.com) m'a même permis de me former pendant 1 an sur ces technologies. Ma conclusion de l'époque était que la technologie nécessitait une connaissance mathématique que je ne possède pas. Et je ne suivais cette industrie que de loin en attendant des outils plus haut niveau.
+En 2016, mon employeur de l'époque [Kibatic](https://kibatic.com) m'a même permis de me former pendant 1 an sur ces technologies. Ma conclusion de l'époque était que la technologie nécessitait une connaissance mathématique que je ne possède pas. Depuis, je ne suivais cette industrie que de loin en attendant des outils plus haut niveau.
 
 Ma réflexion est axée sur les 4 volets ci-dessous, où chaque élément fera l'objet de son propre article.
 
