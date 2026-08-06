@@ -16,7 +16,7 @@ Depuis 3 ans je mentore au travail et en perso des personnes venant de reconvert
 
 Au delà de la technique à synthétiser, pour laquelle on peut toujours trouver des ressources, une partie que j'ai beaucoup de mal à transmettre est les techniques mentales que j'ai acquises au fil du temps pour aborder certains problèmes. Afin de mieux les cerner j'essaie maintenant de leur trouver un nom, et pour mieux les formaliser je vais essayer de les définir sur ce blog sous forme de [Mental tips](../../../category/mental-tips) en commençant par [les espaces positif/négatif](espace-positif-negatif.md).
 
-L'autre sujet incontournable de ces 3 dernières années: l'IA.
+L'autre sujet incontournable de ces 3 dernières années : l'IA.
 
 C'est un sujet qui me passionne depuis plus de 10 ans maintenant, avant même les prouesses d'[AlphaGo](https://en.wikipedia.org/wiki/AlphaGo). Depuis le début de la hype il y a 3 ans mon message en privée a été : la génération de code par IA est une solution à un problème que nous n'avons pas.
 
