@@ -24,7 +24,7 @@ Depuis quelques années (2022-2026) quand on parle d'IA c'est un raccourci pour 
 
 Pour comprendre l'utilité des LLMs il faut donc comprendre le fonctionnement de ces réseaux. 
 
-Un réseau de neurones est une fonction qui pour un input donné va retourner plusieurs réponses probables avec un score de probabilité attribuer à chaque. Comme toute fonction, tous les réseaux de neurones ne se ressemblent pas et n'attendent pas forcément la même chose en input et ne retourneront pas les mêmes réponses.
+Un réseau de neurones est une fonction qui pour un input donné va retourner plusieurs réponses probables avec un score de probabilité attribué à chaque. Comme toute fonction, tous les réseaux de neurones ne se ressemblent pas et n'attendent pas forcément la même chose en input et ne retourneront pas les mêmes réponses.
 
 La partie intéressante est comment ces fonctions sont créées, ou plutôt entrainées.
 
