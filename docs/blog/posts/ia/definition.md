@@ -1,6 +1,6 @@
 ---
 authors: [baptouuuu]
-date: 2026-08-08
+date: 2026-08-15
 categories: [AI]
 ---
 
