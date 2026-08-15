@@ -44,6 +44,8 @@ C'est pour ça qu'on parle de statistiques, l'algorithme d'entrainement ne produ
 
     Pour autant même si on est capable de les prédire, ce n'est pas pour autant que ça nous a permit de comprendre le mécanisme sous jacent qui opère le repliement. Et AlphaFold ne l'a pas _comprit_ non plus, car même sur des séquences simples sa prédiction peut être fausse.
 
+    Le documentaire [The Thinking Game](https://en.wikipedia.org/wiki/The_Thinking_Game) sur cette histoire est d'ailleurs très intéressant.
+
 Pour en revenir aux LLMs, ce sont des algorithmes basés sur des réseaux de neurones qui acceptent du texte en input et produisent en réponse un texte le plus probable. Et ça le fait mot par mot, ou plus exactement token par token. 
 
 !!! info ""
