@@ -53,6 +53,5 @@ Pour en revenir aux LLMs, ce sont des algorithmes basés sur des réseaux de neu
 
     Reste à notre charge de les appliquer à des problèmes qui :
 
-    1. n'ont pas de solutions connues,
-    2. où la réponse est une approximation des données d'entrainement,
-    3. et dont une réponse fausse est acceptable (et statistiquement certaine d'arriver).
+    1. consistent à trouver des solutions probables dans un grand espace de données,
+    2. et dont une réponse fausse est acceptable (et statistiquement certaine d'arriver).
