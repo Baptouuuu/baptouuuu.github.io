@@ -21,7 +21,7 @@ En 2016, mon employeur de l'époque [Kibatic](https://kibatic.com) m'a même per
 Ma réflexion est axée sur les 4 volets ci-dessous, où chaque élément fera l'objet de son propre article.
 
 - Volet Technique
-    - Qu'est-ce que l'IA ?
+    - [Qu'est-ce que l'IA ?](ia/definition.md)
     - Quel est le job d'une équipe de développement ?
     - L'utilité du code
     - La différence entre vitesse et impact
