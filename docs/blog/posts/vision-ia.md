@@ -25,7 +25,7 @@ Ma réflexion est axée sur les 4 volets ci-dessous, où chaque élément fera l
     - Quel est le job d'une équipe de développement ?
     - L'utilité du code
     - La différence entre vitesse et impact
-    - Le paradoxe du taux de succès
+    - [Le paradoxe du taux de succès](ia/paradoxe-taux-succes.md)
     - La frontière humaine : l'espace infini
     - Une fondation mathématique de 50 ans
     - Ingénierie vs Science fondamentale
