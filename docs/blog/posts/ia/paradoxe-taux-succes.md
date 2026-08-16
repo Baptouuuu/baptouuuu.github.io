@@ -32,7 +32,7 @@ Comme ça on pourrait se dire que c'est plutôt une bonne chose. Mais ce taux in
 
 C'est là le paradoxe du taux de succès. On veut un taux suffisament élevé pour être utile dans sa capacité à prédire de nouvelles réponses mais pas trop élevé car il ne sera pas capable de répondre à de nouveaux inputs.
 
-Ça veut dire que quand on entend des gens espérait que les modèles de LLMs[^1] s'amélioreront pour éliminer le problème des hallucinations (alias une mauvaise réponse), c'est une illusion.
+Ça veut dire que quand on entend des gens espérer que les modèles de LLMs[^1] s'amélioreront pour éliminer le problème des hallucinations (alias une mauvaise réponse), c'est une illusion.
 
 Pour faire une analogie, même si je n'aime pas anthropomorphiser cette technologie : un modèle qui ne fait pas d'erreur c'est comme un élève qui apprend les réponses par coeur d'un examen (1), ça ne sert à rien.
 {.annotate}
