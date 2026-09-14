@@ -64,4 +64,4 @@ Le résultat c'est que ces laboratoires ont accès à l'ensemble de ce qui fait 
 
 Et cette idée que les IA américaines viennent nous concurrencer directement n'est plus si farfelue. Début 2026 Anthropic a créé un [parternariat avec Figma](https://techcrunch.com/2026/04/16/anthropic-cpo-leaves-figmas-board-after-reports-he-will-offer-a-competing-product/) où le directeur produit d'Anthropic est parti du conseil d'administration de Figma 3 jours avant de lancer un concurrent. Ou au début de l'été 2026 Alex Karp (président de [Palantir](https://en.wikipedia.org/wiki/Palantir)) [mentionnait sur CNBC](https://www.youtube.com/watch?v=0A3sGymV6kY) que ses clients craignent ce problème.
 
-Pour conclure, si on croit en cette productivité par l'IA à minima l'utilisation d'IA "Saas" américaines devraient être hors de question.
+Pour conclure, si on croit en cette productivité par l'IA à minima l'utilisation d'IA "Saas" américaines devrait être à proscrire.
