@@ -47,7 +47,7 @@ En soit on pourrait se dire que c'est pas bien grave, on envoit déjà plein de 
 
 Mais le fait que ce soit des services américains est problématique sur 2 aspects.
 
-Le premier est la _guerre économique_ opérée par les américains. En France on en a déjà fait les frais avec l'affaire [Gemplus](https://www.youtube.com/watch?v=2wMxldl3Alk) ou [Alstom](https://fr.wikipedia.org/wiki/Affaire_Alstom).
+Le premier est la _guerre économique_ opérée par les américains. En France on en a déjà fait les frais avec l'affaire [Gemplus](https://www.youtube.com/watch?v=2wMxldl3Alk) ou [Alstom](https://fr.wikipedia.org/wiki/Affaire_Alstom) (et probablement d'autres).
 
 Le deuxième est la relation que ces entreprises ont avec les données qu'elles hébergent. Leur politique est qu'elles peuvent exploiter ces données. 
 
