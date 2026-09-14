@@ -32,7 +32,7 @@ Ma réflexion est axée sur les 4 volets ci-dessous, où chaque élément fera l
 
 - Volet (Géo)Stratégique
     - La rupture de la chaine de formation
-    - L'entrainement du futur concurrent universel
+    - [L'entrainement du futur concurrent universel](ia/concurrent-universel.md)
     - La dépendance à une puissance étrangère
     - Renseignement économique et militaire
 
