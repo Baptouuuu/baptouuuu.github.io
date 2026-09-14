@@ -120,7 +120,7 @@ Et on peut même encore compresser cette matrice en un vecteur de _triple_ :
 
 ## Hautes dimensions
 
-A chaque nouvelle argument et donc nouvelle dimension il revient à appliquer récursivement les mêmes techniques pour naviguer dans cette complexité.
+A chaque nouvel argument et donc nouvelle dimension il revient à appliquer récursivement les mêmes techniques pour naviguer dans cette complexité.
 
 Mais même en connaissant et pratiquant ces techniques, à haute dimensions la complexité est difficile à gérer. 
 
