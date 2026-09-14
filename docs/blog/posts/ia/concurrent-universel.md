@@ -19,7 +19,7 @@ La valeur d'une entreprise n'est pas son code (1), son support, ses processus, s
 
 1. application ou produit au sens large
 
-Cette valeur ajoutée réside dans l'approche des employés à résoudre les problèmes et les communiquer en interne. Quelles sont les questions que l'équipe produit posent aux clients pour cerner leur problème. Comment les commerciaux abordent les prospects pour les convaincre de signer avec nous. Comment les devs approchent les problèmes techniques. Quel est le langage commun pour avancer de concert.
+Cette valeur ajoutée réside dans l'approche des employés à résoudre les problèmes et les communiquer en interne. Quelles sont les questions que l'équipe Produit pose aux clients pour cerner leur problèmes. Comment les commerciaux abordent les prospects pour les convaincre de signer avec nous. Comment les devs approchent les problèmes techniques. Quel est le langage commun pour avancer de concert.
 
 Si on prend le sujet à l'envers avec par exemple une personne qui accède au code source ou au carnet client et qu'elle crée une entreprise pour nous concurrencer. Cette personne de finira pas avec la même entreprise que la notre, car elle aura tout le reste à reconstruire. Tout l'aspect informel que je mentionnais au-dessus est induit par les employés et leur façon de penser.
 
