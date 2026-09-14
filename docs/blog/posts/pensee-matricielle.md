@@ -24,7 +24,7 @@ Le vecteur possible pour notre fonction est :
 |-|-|-|-|-|-|-|
 || `0` | `1` | `2` | `3` | ... | `2^63-1` |
 
-Jusque là se le représenter mentalement reste abordable. 
+Jusque là, se le représenter mentalement reste abordable. 
 
 Mais techniquement ce vecteur est faux car si on accepte en argument l'entier maximum possible par notre système alors la valeur retournée ne peut pas être représentée. On a le choix entre un `int overflow` ou cast l'entier en `float` (mais la signature de la fonction n'est pas bonne). 
 
