@@ -14,7 +14,7 @@ Dans un usage simple c'est facile à présenter et utiliser mais au plus le prob
 
 ## Une dimension
 
-Comme son nom l'indique, la pensée matricielle se base sur les matrices. Dans sa version la plus simple on a la matrice a une dimension, aussi appelée un vecteur.
+Comme son nom l'indique, la pensée matricielle se base sur les matrices. Dans sa version la plus simple on a la matrice à une dimension, aussi appelée un vecteur.
 
 Si on prend une fonction `#!php function increment(int<0, max> $x): int<0, max>`, d'un point de vue abstrait l'ensemble des arguments possibles vont de `0` à l'infini (c'est ce qu'on appelle un `Set` en math/programmation fonctionnelle). Mais dans la réalité cet ensemble ne peut pas être infini, sur un système 64 bits on s'arrête à l'entier `2^63-1` (soit `9 223 372 036 854 775 807`).
 
