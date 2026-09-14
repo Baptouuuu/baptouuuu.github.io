@@ -134,7 +134,7 @@ En programmation fonctionnelle on retrouve partout des fonctions avec un seul ar
 
 Et on retrouve le système de typage comme mécanisme pour compresser un vecteur derrière un nom (alias un type, ou une classe en PHP). En utilisant un nom on masque plus facilement la complexité qui se cache derrière.
 
-Au final on se retrouve à naviguer mentalement entre des matrices et des vecteurs, et à masquer ou révéler la complexité en fonction du niveau de lecture qu'on a besoin.
+Au final on se retrouve à naviguer mentalement entre des matrices et des vecteurs, et à masquer ou révéler la complexité en fonction du niveau de lecture dont on a besoin.
 
 A force de me représenter cette complexité c'est ce qui m'a amené au [Property Based Testing](https://en.wikipedia.org/wiki/Software_testing#Property_testing) et à créer [BlackBox](https://github.com/innmind/blackbox). Et maintenant à explorer le Simulation Testing, mais c'est une histoire pour plus tard.
 
