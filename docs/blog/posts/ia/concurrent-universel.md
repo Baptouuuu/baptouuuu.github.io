@@ -14,7 +14,7 @@ Les avantages de productivité est une vue court-termiste qui met en péril la s
 
 ## La force d'une entreprise
 
-La valeur d'une entreprise n'est pas son code (1), son support, ses processus, ses commerciaux, son marketing ou tout autre service qui la compose. C'est la somme de tous ses composants qui est plus grand que chaque élément.
+La valeur d'une entreprise n'est pas son code (1), son support, ses processus, ses commerciaux, son marketing ou tout autre service qui la compose. C'est l'ensemble qui est plus grand que la somme de ses éléments.
 {.annotate}
 
 1. application ou produit au sens large
