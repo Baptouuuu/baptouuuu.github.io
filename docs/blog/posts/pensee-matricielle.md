@@ -130,7 +130,7 @@ Dès que l'envie de réduire les ensembles de données pointe son nez il ne faut
 
 Par cette approche on voit indirectement le lien avec la programmation fonctionnelle et le système de typage.
 
-En programmation fonctionnelle on retrouve partout des fonctions avec un seul argument, même si celui peut être un tuple. C'est la mécanique de compression des dimensions. On peut plus facilement appréhender un vecteur de permutations qu'une matrice à haute dimensions.
+En programmation fonctionnelle on retrouve partout des fonctions avec un seul argument, même si celui-ci peut être un tuple. C'est la mécanique de compression des dimensions. On peut plus facilement appréhender un vecteur de permutations qu'une matrice à haute dimensions.
 
 Et on retrouve le système de typage comme mécanisme pour compresser un vecteur derrière un nom (alias un type, ou une classe en PHP). En utilisant un nom on masque plus facilement la complexité qui se cache derrière.
 
