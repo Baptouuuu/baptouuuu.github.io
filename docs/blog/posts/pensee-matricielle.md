@@ -136,7 +136,7 @@ Et on retrouve le système de typage comme mécanisme pour compresser un vecteur
 
 Au final on se retrouve à naviguer mentalement entre des matrices et des vecteurs, et à masquer ou révéler la complexité en fonction du niveau de lecture dont on a besoin.
 
-A force de me représenter cette complexité c'est ce qui m'a amené au [Property Based Testing](https://en.wikipedia.org/wiki/Software_testing#Property_testing) et à créer [BlackBox](https://github.com/innmind/blackbox). Et maintenant à explorer le Simulation Testing, mais c'est une histoire pour plus tard.
+A force de me représenter cette complexité, c'est ce qui m'a amené au [Property Based Testing](https://en.wikipedia.org/wiki/Software_testing#Property_testing) et à créer [BlackBox](https://github.com/innmind/blackbox). Et maintenant à explorer le Simulation Testing, mais c'est une histoire pour plus tard.
 
 ??? info
     Vu qu'on parle d'IA partout en ce moment, on retrouve cette logique de compression dans la représentation textuelle. Une IA pour représenter la similarité sémantique des mots utilise une matrice à haute dimension de `float`. 
