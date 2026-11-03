@@ -102,7 +102,7 @@ Ce parallèle avec le transport mécanisé montre également un paradoxe de l'us
 
 Cela montre également un autre danger : le bus factor. Ces transports à grande vitesse sont opérable par un nombre limité de personnes, mais au moindre problème ([perte de roue](https://www.youtube.com/watch?v=ZMZJ3ZaEcIQ) ou [collision aviaire](https://en.wikipedia.org/wiki/US_Airways_Flight_1549)) les conséquences se décident en peu de temps. Là où le porte conteneur demande plus de personnes pour l'opérer mais les responsabilités sont distribuées et plus soutenables dans le temps.
 
-Je comprends que ça fait plaisir de se voir piloter un avion, et c'est pas mon amour de l'ingénierie qui va dire le contredire, mais le rapport économique est là : un éditeur a tout d'un porte conteneur.
+Je comprends que ça fasse plaisir de se voir piloter un avion, et c'est pas mon amour de l'ingénierie qui va dire le contraire, mais le rapport économique est là : un éditeur a tout d'un porte conteneur.
 
 !!! success ""
     Maximisez le `couple` pour la production de code, maximisez la `vitesse` pour son exécution au runtime !
