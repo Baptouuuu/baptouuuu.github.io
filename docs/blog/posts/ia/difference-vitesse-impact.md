@@ -52,7 +52,7 @@ La difficulté de la communication est d'arriver à transmettre la complexité d
 
 Si on reprend la formule mécanique et qu'on souhaite maximiser la `vitesse` cela revient à augmenter le nombre de mots produits à la minute.
 
-Si c'était une solution soutenable la nature nous aurait fait évoluer pour parler de plus en plus vite. Ou on aurait vu naitre des formations pour parler avec le débit d'[Eminem](https://www.youtube.com/watch?v=XbGs_qK2PQA) ou pour [taper sur nos claviers](https://www.typingtest.com) de plus en plus vite.
+Si c'était une solution soutenable, la nature nous aurait fait évoluer pour parler de plus en plus vite. Ou on aurait vu naitre des formations pour parler avec le débit d'[Eminem](https://www.youtube.com/watch?v=XbGs_qK2PQA) ou pour [taper sur nos claviers](https://www.typingtest.com) de plus en plus vite.
 
 A l'inverse ce que nous montre notre histoire c'est qu'on privilégie le `couple` via la compression des concepts. C'est à dire qu'on préfère inventer de nouveaux mots pour englober des concepts complexes. L'effet c'est qu'avec un même nombre de mots on est capable d'exprimer plus d'informations et avec plus de précision.
 
