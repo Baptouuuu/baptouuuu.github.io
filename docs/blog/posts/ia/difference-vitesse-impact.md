@@ -10,7 +10,7 @@ En lisant les ouvrages des philosophes stoïciens il y a un principe qui m'a bea
 
 L'agitation nous donne le sentiment de productivité en faisant plein de choses différentes à un rythme éffréné.
 
-En comparaison l'action va nous paraitre plus lente car elle mobilise moins de sujets et ne produit pas nécessairement de résultat immédiatement. Et pourtant c'est bien elle qui permet de faire avancé les sujets complexes.
+En comparaison l'action va nous paraitre plus lente car elle mobilise moins de sujets et ne produit pas nécessairement de résultat immédiatement. Et pourtant c'est bien elle qui permet de faire avancer les sujets complexes.
 
 !!! warning ""
     C'est pour ça que je considère que vouloir maximiser la vitesse est une **erreur startégique** pour un éditeur.
