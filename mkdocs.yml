@@ -99,8 +99,6 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Baptouuuu
-    - icon: fontawesome/brands/x-twitter
-      link: https://twitter.com/Baptouuuu
     - icon: fontawesome/brands/mastodon
       link: https://phpc.social/@baptouuuu
     - icon: fontawesome/brands/bluesky
