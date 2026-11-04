@@ -24,7 +24,7 @@ Ma réflexion est axée sur les 4 volets ci-dessous, où chaque élément fera l
     - [Qu'est-ce que l'IA ?](ia/definition.md)
     - Quel est le job d'une équipe de développement ?
     - L'utilité du code
-    - La différence entre vitesse et impact
+    - [La différence entre vitesse et impact](ia/difference-vitesse-impact.md)
     - [Le paradoxe du taux de succès](ia/paradoxe-taux-succes.md)
     - La frontière humaine : l'espace infini
     - Une fondation mathématique de 50 ans
