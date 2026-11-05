@@ -17,7 +17,7 @@ En comparaison l'action va nous paraitre plus lente car elle mobilise moins de s
 
 <!-- more -->
 
-Mais jusqu'à présent cette position était difficile à transmettre et à tenir car l'argumentaire est subjectif. La définition de ce qui est de l'agitation ou de l'action est susceptible à interprétation.
+Mais jusqu'à présent cette position était difficile à transmettre et à tenir car l'argumentaire est subjectif. La définition de ce qui est de l'agitation ou de l'action est sujette à interprétation.
 
 Comme à mon habitude j'aime chercher des parallèles entre notre métier et d'autre secteurs. Celui qui m'est venu récemment est lié à la mécanique.
 
