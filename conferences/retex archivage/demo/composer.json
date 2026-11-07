@@ -1,0 +1,15 @@
+{
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Baptiste Langlade",
+            "email": "baptiste.langlade@hey.com"
+        }
+    ],
+    "require": {
+        "innmind/foundation": "~1.10",
+        "formal/orm": "~5.1",
+        "innmind/black-box": "~6.5"
+    }
+}
