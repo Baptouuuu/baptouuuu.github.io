@@ -6,6 +6,9 @@ categories: [AI]
 
 # Qu'est-ce que l'IA ?
 
+??? quote "Série IA"
+    Cette article fait partie d'une [série sur la place de l'IA chez un éditeur](../vision-ia.md).
+
 En 2018 j'ai assisté à une table ronde sur l'IA et une des participantes, en introduction, l'a résumé magnifiquement : 
 
 <div class="annotate" markdown>

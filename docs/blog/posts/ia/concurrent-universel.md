@@ -6,6 +6,9 @@ categories: [AI]
 
 # L'entrainement du futur concurrent universel
 
+??? quote "Série IA"
+    Cette article fait partie d'une [série sur la place de l'IA chez un éditeur](../vision-ia.md).
+
 Si on fait abstraction des [problèmes techniques](../../../category/ai/) de l'IA et qu'on accepte temporairement le discours poussé par les laboratoires tels qu'OpenAI ou Anthropic, l'usage reste problématique pour le futur des entreprises.
 
 Les avantages de productivité est une vue court-termiste qui met en péril la survie des entreprises à terme.

@@ -6,6 +6,9 @@ categories: [AI]
 
 # Le paradoxe du taux de succès
 
+??? quote "Série IA"
+    Cette article fait partie d'une [série sur la place de l'IA chez un éditeur](../vision-ia.md).
+
 En 2016, mon employeur de l'époque [Kibatic](https://kibatic.com) m'a permis de me former au Machine Learning. On y est arrivé en abordant les technologies de big data (Hadoop et compagnie), comment manipuler ces données et les préparer pour ensuite apprendre d'elles via des algorithmes de Machine Learning.
 
 Ça a été une année très formatrice. J'ai découvert plein d'outils et de concepts. Mais j'ai surtout retenu que c'est vraiment un métier à part entière qui nécessite des compétences pointues pour ne pas introduire (trop) de biais dans les modèles produits.

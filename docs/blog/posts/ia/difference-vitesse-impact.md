@@ -6,6 +6,9 @@ categories: [AI]
 
 # La différence entre vitesse et impact
 
+??? quote "Série IA"
+    Cette article fait partie d'une [série sur la place de l'IA chez un éditeur](../vision-ia.md).
+
 En lisant les ouvrages des philosophes stoïciens il y a un principe qui m'a beaucoup marqué et auquel je repense souvent : ne pas confondre l'agitation et l'action.
 
 L'agitation nous donne le sentiment de productivité en faisant plein de choses différentes à un rythme éffréné.
